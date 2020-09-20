@@ -1,0 +1,3958 @@
+:root {
+  --width: 400px;
+  --height: 400px;
+  --unit: 10px;
+
+  --color1: darkred;
+  --color2: crimson;
+  --color3: transparent;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.pattern {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin: 30px;
+  width: var(--width);
+  height: var(--height);
+  background-color: var(--color1);
+
+  span {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: regular;
+    line-height: 100px;
+    position: relative;
+    margin-left: -50px;
+    margin-top: -50px;
+    box-shadow: 0 10px 40px var(--color1), 0 5px 10px var(--color1);
+  }
+
+  &__covid {
+    background-size: calc(var(--unit) * 30) calc(var(--unit) * 30);
+    background-position:
+      calc(var(--unit) * -10) calc(var(--unit) * -10),
+      calc(var(--unit) * 11) calc(var(--unit) * 8),
+      calc(var(--unit) * 10) calc(var(--unit) * -8),
+      calc(var(--unit) * -9) calc(var(--unit) * 3),
+      calc(var(--unit) * 9) calc(var(--unit) * 10),
+      calc(var(--unit) * -8) calc(var(--unit) * -7),
+
+      calc(var(--unit) * 1) calc(var(--unit) * 1),
+      calc(var(--unit) * 0.6) calc(var(--unit) * -1.5),
+      calc(var(--unit) * -1.5) calc(var(--unit) * -0.5),
+
+      calc(var(--unit) * 4) calc(var(--unit) * 4),
+      calc(var(--unit) * -3.6) calc(var(--unit) * -3.6),
+      calc(var(--unit) * -4.2) calc(var(--unit) * 4.2),
+      calc(var(--unit) * 5) 0,
+      0 calc(var(--unit) * 6),
+      0 calc(var(--unit) * -5),
+
+      0 calc(var(--unit) * 9),
+      0 calc(var(--unit) * -9),
+      calc(var(--unit) * -10.2) 0,
+      calc(var(--unit) * 11) calc(var(--unit) * -11),
+      calc(var(--unit) * 11) calc(var(--unit) * 11),
+      calc(var(--unit) * -11) calc(var(--unit) * -11),
+
+      0 0;
+
+    background-image: 
+      radial-gradient(
+        circle,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 0.6),
+        var(--color3) calc(var(--unit) * 0.6)
+      ),
+      radial-gradient(
+        circle,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 0.8),
+        var(--color3) calc(var(--unit) * 0.8)
+      ),
+      radial-gradient(
+        circle,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 0.2),
+        var(--color3) calc(var(--unit) * 0.2)
+      ),
+      radial-gradient(
+        circle,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 0.4),
+        var(--color3) calc(var(--unit) * 0.4)
+      ),
+      radial-gradient(
+        circle,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 0.2),
+        var(--color3) calc(var(--unit) * 0.2)
+      ),
+      radial-gradient(
+        circle,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 0.2),
+        var(--color3) calc(var(--unit) * 0.2)
+      ),
+
+      radial-gradient(
+        circle,
+        var(--color1),
+        var(--color1) calc(var(--unit) * 0.8),
+        var(--color3) calc(var(--unit) * 0.8)
+      ),
+      radial-gradient(
+        circle,
+        var(--color1),
+        var(--color1) calc(var(--unit) * 0.4),
+        var(--color3) calc(var(--unit) * 0.4)
+      ),
+      radial-gradient(
+        circle,
+        var(--color1),
+        var(--color1) calc(var(--unit) * 0.6),
+        var(--color3) calc(var(--unit) * 0.6)
+      ),
+
+      radial-gradient(
+        circle,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color3) calc(var(--unit) * 1)
+      ),
+      radial-gradient(
+        circle,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 0.6),
+        var(--color3) calc(var(--unit) * 0.6)
+      ),
+      radial-gradient(
+        circle,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 1.0),
+        var(--color3) calc(var(--unit) * 1.0)
+      ),
+      radial-gradient(
+        circle,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 0.6),
+        var(--color3) calc(var(--unit) * 0.6)
+      ),
+      radial-gradient(
+        circle,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 0.6),
+        var(--color3) calc(var(--unit) * 0.6)
+      ),
+      radial-gradient(
+        circle,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 1.2),
+        var(--color3) calc(var(--unit) * 1.2)
+      ),
+
+      conic-gradient(
+        from 0deg at calc(var(--unit) * 15) calc(var(--unit) * 7.5),
+        var(--color2) 4deg,
+        var(--color3) 4deg,
+        var(--color3) 356deg,
+        var(--color2) 356deg
+      ),
+      conic-gradient(
+        from 0deg at calc(var(--unit) * 15) calc(var(--unit) * 22.5),
+        var(--color3) 178deg,
+        var(--color2) 178deg,
+        var(--color2) 182deg,
+        var(--color3) 182deg
+      ),
+      conic-gradient(
+        from 0deg at calc(var(--unit) * 22.5) calc(var(--unit) * 15),
+        var(--color3) 88deg,
+        var(--color2) 88deg,
+        var(--color2) 92deg,
+        var(--color3) 92deg
+      ),
+      conic-gradient(
+        from 0deg at calc(var(--unit) * 6) calc(var(--unit) * 24),
+        var(--color3) 223deg,
+        var(--color2) 223deg,
+        var(--color2) 227deg,
+        var(--color3) 227deg
+      ),
+      conic-gradient(
+        from 0deg at calc(var(--unit) * 7.5) calc(var(--unit) * 7.5),
+        var(--color3) 314deg,
+        var(--color2) 314deg,
+        var(--color2) 316deg,
+        var(--color3) 316deg
+      ),
+      conic-gradient(
+        from 0deg at calc(var(--unit) * 22.5) calc(var(--unit) * 22.5),
+        var(--color3) 133deg,
+        var(--color2) 133deg,
+        var(--color2) 137deg,
+        var(--color3) 137deg
+      ),
+
+      radial-gradient(
+        circle,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 3),
+        var(--color3) calc(var(--unit) * 3)
+      )
+    ;
+  }
+
+  &__stripes-vertical {
+    $tilt: 90deg;
+
+    background-image: 
+      repeating-linear-gradient(
+        $tilt,
+        var(--color1),
+        var(--color1) var(--unit),
+        var(--color2) var(--unit),
+        var(--color2) calc(var(--unit) * 2)
+      )
+    ;
+  }
+
+  &__stripes-horizontal {
+    $tilt: 0deg;
+
+    background-image: 
+      repeating-linear-gradient(
+        $tilt,
+        var(--color1),
+        var(--color1) var(--unit),
+        var(--color2) var(--unit),
+        var(--color2) calc(var(--unit) * 2)
+      )
+    ;
+  }
+
+  &__stripes-oblique {
+    $tilt: 45deg;
+
+    background-image: 
+      repeating-linear-gradient(
+        $tilt,
+        var(--color1),
+        var(--color1) var(--unit),
+        var(--color2) var(--unit),
+        var(--color2) calc(var(--unit) * 2)
+      )
+    ;
+  }
+
+  &__radial-center {
+    background-image: 
+      repeating-radial-gradient(
+        circle,
+        var(--color1),
+        var(--color1) var(--unit),
+        var(--color2) var(--unit),
+        var(--color2) calc(var(--unit) * 2)
+      )
+    ;
+  }
+
+  &__radial-corner {
+    background-image: 
+      repeating-radial-gradient(
+        circle at 0% 0%,
+        var(--color1),
+        var(--color1) var(--unit),
+        var(--color2) var(--unit),
+        var(--color2) calc(var(--unit) * 2)
+      )
+    ;
+  }
+
+  &__radial-circles {
+    background-size: calc(var(--unit) * 4) calc(var(--unit) * 4);
+    background-image: 
+      repeating-radial-gradient(
+        circle,
+        var(--color1),
+        var(--color1) var(--unit),
+        var(--color2) var(--unit),
+        var(--color2) calc(var(--unit) * 2)
+      )
+    ;
+  }
+
+  &__polka-dots {
+    background-size: calc(var(--unit) * 4) calc(var(--unit) * 4);
+    background-image: 
+      radial-gradient(
+        circle, 
+        var(--color1), 
+        var(--color1) var(--unit),
+        var(--color2) var(--unit),
+        var(--color2)
+      )
+    ;
+  }
+
+  &__net {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-image: 
+      repeating-linear-gradient(
+        45deg,
+        var(--color3) 0%, 
+        var(--color3) 40%,
+        var(--color2) 40%, 
+        var(--color2) 60%, 
+        var(--color3) 60%, 
+        var(--color3) 100%
+      ), 
+      repeating-linear-gradient(
+        -45deg, 
+        var(--color3) 0%, 
+        var(--color3) 40%, 
+        var(--color2) 40%, 
+        var(--color2) 60%, 
+        var(--color3) 60%, 
+        var(--color3) 100%
+      )
+    ;
+  }
+
+  &__crosses {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-image: 
+      repeating-linear-gradient(
+        45deg,
+        var(--color3) 0%,
+        var(--color3) 80%,
+        var(--color1) 80%,
+        var(--color1) 100%
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        var(--color3) 0%,
+        var(--color3) 80%,
+        var(--color1) 80%,
+        var(--color1) 100%
+      ),
+      repeating-linear-gradient(
+        135deg,
+        var(--color3) 0%,
+        var(--color3) 80%,
+        var(--color1) 80%,
+        var(--color1) 100%
+      ),
+      repeating-linear-gradient(
+        -135deg,
+        var(--color3) 0%,
+        var(--color3) 80%,
+        var(--color1) 80%,
+        var(--color1) 100%
+      ),
+      repeating-linear-gradient(
+        45deg, 
+        var(--color3) 0%,
+        var(--color3) 40%,
+        var(--color2) 40%,
+        var(--color2) 60%,
+        var(--color3) 60%, 
+        var(--color3) 100%
+      ), 
+      repeating-linear-gradient(
+        -45deg,
+        var(--color3) 0%,
+        var(--color3) 40%, 
+        var(--color2) 40%, 
+        var(--color2) 60%, 
+        var(--color3) 60%, 
+        var(--color3) 100%
+      )
+    ;
+  }
+
+  &__sidewalk {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-image: 
+      repeating-linear-gradient(
+        45deg,
+        var(--color3) 0%, 
+        var(--color3) 80%,
+        var(--color2) 80%,
+        var(--color2) 100%
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        var(--color3) 0%, 
+        var(--color3) 80%,
+        var(--color2) 80%,
+        var(--color2) 100%
+      ),
+      repeating-linear-gradient(
+        135deg,
+        var(--color3) 0%, 
+        var(--color3) 80%,
+        var(--color2) 80%,
+        var(--color2) 100%
+      ),
+      repeating-linear-gradient(
+        -135deg,
+        var(--color3) 0%, 
+        var(--color3) 80%,
+        var(--color2) 80%,
+        var(--color2) 100%
+      ),
+      repeating-linear-gradient(
+        45deg, 
+        var(--color3) 0%, 
+        var(--color3) 44%,
+        var(--color2) 44%,
+        var(--color2) 56%,
+        var(--color3) 56%, 
+        var(--color3) 100%
+      ), 
+      repeating-linear-gradient(
+        -45deg,
+        var(--color3) 0%, 
+        var(--color3) 44%, 
+        var(--color2) 44%, 
+        var(--color2) 56%, 
+        var(--color3) 56%, 
+        var(--color3) 100%
+      )
+    ;
+  }
+
+  &__checkerboard {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-image: 
+      conic-gradient(
+        var(--color1) 90deg,
+        var(--color2) 90deg,
+        var(--color2) 180deg,
+        var(--color1) 180deg,
+        var(--color1) 270deg,
+        var(--color2) 270deg
+      )
+    ;
+  } 
+
+
+  &__interference {
+    background-size: calc(var(--unit) * 3) calc(var(--unit) * 3);
+    background-repeat: repeat;
+    background-image: 
+      linear-gradient(
+        45deg,
+        var(--color1) 25%,
+        var(--color3) 25%,
+        var(--color3) 75%,
+        var(--color1) 75%
+      ),
+      conic-gradient(
+        var(--color1) 45deg, 
+        var(--color2) 45deg, 
+        var(--color2) 90deg, 
+        var(--color2) 90deg, 
+        var(--color2) 135deg, 
+        var(--color1) 135deg, 
+        var(--color1) 180deg, 
+        var(--color1) 180deg, 
+        var(--color1) 225deg, 
+        var(--color2) 225deg, 
+        var(--color2) 270deg, 
+        var(--color2) 270deg, 
+        var(--color2) 315deg, 
+        var(--color1) 315deg
+      )
+    ;
+  }  
+
+  &__zigzag {
+    background-size: calc(var(--unit) * 4) calc(var(--unit) * 4);
+    background-image:
+      conic-gradient(
+        var(--color2) 45deg,
+        var(--color3) 45deg,
+        var(--color3) 315deg,
+        var(--color2) 315deg
+      ),
+      linear-gradient(
+        45deg,
+        var(--color2) 25%, 
+        var(--color3) 25%
+      ),
+      linear-gradient(
+        315deg,
+        var(--color2) 25%, 
+        var(--color3) 25%
+      )
+    ;
+  }
+
+  &__blocks {
+    background-size: calc(var(--unit) * 4) calc(var(--unit) * 4);
+    background-image:
+      conic-gradient(
+        var(--color1) 90deg,
+        var(--color3) 90deg,
+        var(--color3) 315deg,
+        var(--color1) 315deg
+      ),
+      linear-gradient(
+        45deg,
+        var(--color1) 25%, 
+        var(--color2) 25%
+      )
+    ;
+  }  
+
+  &__stars {
+    background-size: calc(var(--unit) * 4) calc(var(--unit) * 4);
+    background-image: 
+      conic-gradient(
+        var(--color3),
+        var(--color3) 27deg,
+        var(--color1) 27deg,
+        var(--color1) 65deg,
+        var(--color3) 65deg,
+        var(--color3) 119deg,
+        var(--color1) 119deg,
+        var(--color1) 155deg,
+        var(--color3) 155deg,
+        var(--color3) 209deg,
+        var(--color1) 209deg,
+        var(--color1) 245deg,
+        var(--color3) 245deg,
+        var(--color3) 299deg,
+        var(--color1) 299deg,
+        var(--color1) 335deg,
+        var(--color3) 335deg,
+        var(--color3)
+        ),    
+      radial-gradient(
+        circle at var(--unit) var(--unit), 
+        var(--color1) var(--unit),
+        var(--color3) var(--unit)
+      ),
+      radial-gradient(
+        circle at calc(var(--unit) * 3) var(--unit),
+        var(--color1) var(--unit),
+        var(--color3) var(--unit)
+      ),
+      radial-gradient(
+        circle at var(--unit) calc(var(--unit) * 3),
+        var(--color1) var(--unit),
+        var(--color3) var(--unit)
+      ),
+      radial-gradient(
+        circle at calc(var(--unit) * 3) calc(var(--unit) * 3),
+        var(--color1) var(--unit),
+        var(--color3) var(--unit)
+      ),
+      linear-gradient(
+        var(--color2) var(--unit),
+        var(--color3) var(--unit),
+        var(--color3) calc(var(--unit) * 3),
+        var(--color2) calc(var(--unit) * 3)
+      ),
+      linear-gradient(
+        90deg,
+        var(--color2) var(--unit),
+        var(--color3) var(--unit),
+        var(--color3) calc(var(--unit) * 3),
+        var(--color2) calc(var(--unit) * 3)
+      )
+    ;
+  }
+
+  &__tulips {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-position: calc(var(--unit) * -1.5) var(--unit), 0 calc(var(--unit) * -4), calc(var(--unit) * -3) calc(var(--unit) * -4), var(--unit) calc(var(--unit) * 3.5), calc(var(--unit) * 2.5) calc(var(--unit) * -1.5), calc(var(--unit) * -0.5) calc(var(--unit) * -1.5);
+    background-image: 
+      radial-gradient(
+        circle at top center,
+        var(--color2) var(--unit),
+        var(--color3) var(--unit)
+      ),
+      radial-gradient(
+        circle at bottom left,
+        var(--color2) var(--unit),
+        var(--color3) var(--unit)
+      ),
+      radial-gradient(
+        circle at bottom right,
+        var(--color2) var(--unit),
+        var(--color3) var(--unit)
+      ),
+      radial-gradient(
+        circle at top center,
+        var(--color2) var(--unit),
+        var(--color3) var(--unit)
+      ),
+      radial-gradient(
+        circle at bottom left,
+        var(--color2) var(--unit),
+        var(--color3) var(--unit)
+      ),
+      radial-gradient(
+        circle at bottom right,
+        var(--color2) var(--unit),
+        var(--color3) var(--unit)
+      )      
+    ;
+  }
+
+  &__spurs {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-image: 
+      linear-gradient(
+        45deg,
+        var(--color3) 25%,
+        var(--color2) 25%,
+        var(--color2) 75%,
+        var(--color3) 75%
+      )
+    ;
+  }
+
+  &__arrows {
+    background-size: calc(var(--unit) * 10) calc(var(--unit) * 10);
+    background-position: calc(var(--unit) * 5) calc(var(--unit) * -5), 0 calc(var(--unit) * 5), calc(var(--unit) * -5) 0, 0 0, 0 0;
+    background-image: 
+      linear-gradient(
+        45deg,
+        var(--color1) 25%,
+        var(--color3) 25%
+      ),
+      linear-gradient(
+        -135deg,
+        var(--color2) 25%,
+        var(--color3) 25%
+      ),
+      linear-gradient(
+        -135deg,
+        var(--color2) 25%,
+        var(--color3) 25%
+      ),
+      linear-gradient(
+        45deg,
+        var(--color1) 25%,
+        var(--color3) 25%
+      ),
+      linear-gradient(
+        -45deg,
+        var(--color1) 12.5%,
+        var(--color2) 12.5%,
+        var(--color2) 37.5%,
+        var(--color1) 37.5%,
+        var(--color1) 62.5%,
+        var(--color2) 62.5%,
+        var(--color2) 87.5%,
+        var(--color1) 87.5%
+      )
+    ;
+  }
+
+  &__triangles {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-image:
+      conic-gradient(
+        var(--color1) 45deg,
+        var(--color2) 45deg,
+        var(--color2) 90deg,
+        var(--color1) 90deg,
+        var(--color1) 135deg,
+        var(--color2) 135deg,
+        var(--color2) 225deg,
+        var(--color1) 225deg,
+        var(--color1) 270deg,
+        var(--color2) 270deg,
+        var(--color2) 315deg,
+        var(--color1) 315deg
+      )
+    ;    
+  }  
+
+  &__triangles-small {
+    $tilt: 26.67deg;
+    $tilt2: 63.33deg;
+
+    background-size: calc(var(--unit) * 2.5) calc(var(--unit) * 5);
+    background-image:
+      conic-gradient(
+        var(--color1) $tilt,
+        var(--color2) $tilt,
+        var(--color2) 90deg,
+        var(--color1) 90deg,
+        var(--color1) 90 + $tilt2,
+        var(--color2) 90 + $tilt2,
+        var(--color2) 180 + $tilt,
+        var(--color1) 180 + $tilt,
+        var(--color1) 270deg,
+        var(--color2) 270deg,
+        var(--color2) 270 + $tilt2,
+        var(--color1) 270 + $tilt2
+      )
+    ;
+  }
+
+  &__checkerboard-tilt {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-image:
+      conic-gradient(
+        var(--color1) 45deg,
+        var(--color2) 45deg,
+        var(--color2) 135deg,
+        var(--color1) 135deg,
+        var(--color1) 225deg,
+        var(--color2) 225deg,
+        var(--color2) 315deg,
+        var(--color1) 315deg,
+      )
+    ;    
+  }
+
+  &__chevrons {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-image:
+      linear-gradient(
+        45deg,
+        var(--color1),
+        var(--color1) 25%,
+        var(--color3) 25%,
+        var(--color3) 75%,
+        var(--color1) 75%,
+        var(--color1)        
+      ),
+      conic-gradient(
+        from 0 at 25% 25%,
+        var(--color3),
+        var(--color3) 225deg,
+        var(--color1) 225deg,
+        var(--color1) 315deg,
+        var(--color3) 315deg,
+        var(--color3)
+      ),
+      conic-gradient(
+        from 0 at 75% 75%,        
+        var(--color3),
+        var(--color3) 45deg,
+        var(--color1) 45deg,
+        var(--color1) 135deg,
+        var(--color3) 135deg,
+        var(--color3)
+      ),
+      conic-gradient(
+        var(--color2),
+        var(--color2) 45deg,
+        var(--color1) 45deg,
+        var(--color1) 90deg,
+        var(--color2) 90deg,
+        var(--color2) 225deg,
+        var(--color1) 225deg,
+        var(--color1) 270deg,
+        var(--color2) 270deg,
+        var(--color2)
+      )
+    ;
+  }
+
+  &__hexagons {
+    background-size: calc(var(--unit) * 8) calc(var(--unit) * 4);
+    background-position: 0 0, calc(var(--unit) * -2) 0, 0 0;
+    background-image:
+      conic-gradient(
+        var(--color3),
+        var(--color3) 30deg,
+        var(--color1) 30deg,
+        var(--color1) 90deg,
+        var(--color2) 90deg,
+        var(--color2) 150deg,
+        var(--color3) 150deg,
+        var(--color3)
+      ),
+      conic-gradient(
+        var(--color3),
+        var(--color3) 210deg,
+        var(--color2) 210deg,
+        var(--color2) 270deg,
+        var(--color1) 270deg,
+        var(--color1) 330deg,
+        var(--color3) 330deg,
+        var(--color3)
+      ),
+      linear-gradient(
+        var(--color2),
+        var(--color2) 50%,
+        var(--color1) 50%,
+        var(--color1)
+      )
+    ;
+  }
+
+  &__shadows {
+    background-size: calc(var(--unit) * 10) calc(var(--unit) * 10);
+    background-position: 0 0, 0 0, calc(var(--unit) * 5) calc(var(--unit) * -5), calc(var(--unit) * -5) calc(var(--unit) * -5), calc(var(--unit) * -5) calc(var(--unit) * 5), calc(var(--unit) * 5) calc(var(--unit) * 5), 0 0;
+    background-image:
+      radial-gradient(
+        circle at bottom center,
+        var(--color1) calc(var(--unit) * 1.5),
+        var(--color3) calc(var(--unit) * 1.5),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top center,
+        var(--color2) calc(var(--unit) * 1.5),
+        var(--color3) calc(var(--unit) * 1.5),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at bottom center,
+        var(--color1) calc(var(--unit) * 1.5),
+        var(--color3) calc(var(--unit) * 1.5),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at bottom center,
+        var(--color1) calc(var(--unit) * 1.5),
+        var(--color3) calc(var(--unit) * 1.5),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top center,
+        var(--color2) calc(var(--unit) * 1.5),
+        var(--color3) calc(var(--unit) * 1.5),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top center,
+        var(--color2) calc(var(--unit) * 1.5),
+        var(--color3) calc(var(--unit) * 1.5),
+        var(--color3)
+      ),
+      conic-gradient(
+        var(--color3),
+        var(--color3) 45deg,
+        var(--color2) 45deg,
+        var(--color2) 90deg,
+        var(--color3) 90deg,
+        var(--color3) 135deg,
+        var(--color2) 135deg,
+        var(--color2) 225deg,
+        var(--color3) 225deg,
+        var(--color3) 270deg,
+        var(--color2) 270deg,
+        var(--color2) 315deg,
+        var(--color3) 315deg,
+        var(--color3)
+      )
+    ;
+  }
+
+  &__ripples {
+    background-size: calc(var(--unit) * 10) calc(var(--unit) * 10);
+    background-position: calc(var(--unit) * -5) 0, calc(var(--unit) * 5) 0, calc(var(--unit) * -5) 0, calc(var(--unit) * 5) 0, calc(var(--unit) * -5) 0, calc(var(--unit) * 5) 0, calc(var(--unit) * -5) 0;
+    background-image:
+      radial-gradient(
+        circle at right center,
+        var(--color2) calc(var(--unit) * 1),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at left center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at right center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 3),
+        var(--color3) calc(var(--unit) * 3),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at left center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 3),
+        var(--color2) calc(var(--unit) * 3),
+        var(--color2) calc(var(--unit) * 4),
+        var(--color3) calc(var(--unit) * 4),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at right center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 4),
+        var(--color2) calc(var(--unit) * 4),
+        var(--color2) calc(var(--unit) * 5),
+        var(--color3) calc(var(--unit) * 5),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at left center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 5),
+        var(--color2) calc(var(--unit) * 5),
+        var(--color2) calc(var(--unit) * 6),
+        var(--color3) calc(var(--unit) * 6),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at right center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 6),
+        var(--color2) calc(var(--unit) * 6),
+        var(--color2) calc(var(--unit) * 7),
+        var(--color3) calc(var(--unit) * 7),
+        var(--color3)
+      )
+    ;
+  }
+
+  &__halves {
+    background-size: calc(var(--unit) * 10) calc(var(--unit) * 10);
+    background-image: 
+      radial-gradient(
+        circle at center center,
+        var(--color2) calc(var(--unit) * 1),
+        var(--color1) calc(var(--unit) * 1),
+        var(--color1) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      linear-gradient(
+        45deg,
+        var(--color2),
+        var(--color2) 50%,
+        var(--color3) 50%,
+        var(--color3)
+      )
+    ;
+  }
+
+  &__benidorm {
+    background-size: calc(var(--unit) * 10) calc(var(--unit) * 10);
+    background-position: calc(var(--unit) * 5) calc(var(--unit) * 5), calc(var(--unit) * 5) calc(var(--unit) * 5), 0 0, 0 0;
+    background-image: 
+      radial-gradient(
+        circle at bottom center,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top center,
+        var(--color1),
+        var(--color1) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      linear-gradient(
+        45deg,
+        var(--color1),
+        var(--color1) 50%,
+        var(--color2) 50%,
+        var(--color2)
+      )
+    ;
+  }
+
+  &__vitreaux {
+    background-size: calc(var(--unit) * 10) calc(var(--unit) * 10);
+    background-image: 
+      radial-gradient(
+        circle at center center,
+        var(--color1),
+        var(--color1) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top left,
+        var(--color1),
+        var(--color1) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top right,
+        var(--color1),
+        var(--color1) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at bottom left,
+        var(--color1),
+        var(--color1) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at bottom right,
+        var(--color1),
+        var(--color1) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      linear-gradient(
+        0deg,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 4.5),
+        var(--color2) calc(var(--unit) * 4.5),
+        var(--color2) calc(var(--unit) * 5.5),
+        var(--color3) calc(var(--unit) * 5.5),
+        var(--color3)
+      ),
+      linear-gradient(
+        90deg,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 4.5),
+        var(--color2) calc(var(--unit) * 4.5),
+        var(--color2) calc(var(--unit) * 5.5),
+        var(--color3) calc(var(--unit) * 5.5),
+        var(--color3)
+      ),
+      linear-gradient(
+        0deg,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 0.5),
+        var(--color3) calc(var(--unit) * 0.5),
+        var(--color3) calc(var(--unit) * 9.5),
+        var(--color2) calc(var(--unit) * 9.5),
+        var(--color2)
+      ),
+      linear-gradient(
+        90deg,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 0.5),
+        var(--color3) calc(var(--unit) * 0.5),
+        var(--color3) calc(var(--unit) * 9.5),
+        var(--color2) calc(var(--unit) * 9.5),
+        var(--color2)
+      ),
+      linear-gradient(
+        45deg,
+        var(--color3),
+        var(--color3) 47%,
+        var(--color2) 47%,
+        var(--color2) 53%,
+        var(--color3) 53%,
+        var(--color3)
+      ),
+      linear-gradient(
+        -45deg,
+        var(--color3),
+        var(--color3) 47%,
+        var(--color2) 47%,
+        var(--color2) 53%,
+        var(--color3) 53%,
+        var(--color3)
+      )
+    ;
+  }
+
+  &__moons {
+    background-size: calc(var(--unit) * 6) calc(var(--unit) * 2);
+    background-image: 
+      radial-gradient(
+        circle at bottom center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top left,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top right,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      )
+    ;
+  }
+
+  &__half-circles {
+    background-size: calc(var(--unit) * 8) calc(var(--unit) * 4);
+    background-image: 
+      radial-gradient(
+        circle at bottom center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top left,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top right,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      )
+    ;
+  }    
+
+  &__bowel {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-image: 
+      radial-gradient(
+        circle at bottom center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 3.1),
+        var(--color3) calc(var(--unit) * 3.1),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top left,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 3.1),
+        var(--color3) calc(var(--unit) * 3.1),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top right,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 3.1),
+        var(--color3) calc(var(--unit) * 3.1),
+        var(--color3)
+      )
+    ;
+  }
+
+  &__thorns {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-position: calc(var(--unit) * -1.25) 0, 0 calc(var(--unit) * 1.25), 0 0, 0 0;
+    background-image:
+      conic-gradient(
+        var(--color3),
+        var(--color3) 225deg,
+        var(--color2) 225deg,
+        var(--color2) 270deg,
+        var(--color3) 270deg,
+        var(--color3)
+      ),
+      conic-gradient(
+        var(--color3),
+        var(--color3) 180deg,
+        var(--color1) 180deg,
+        var(--color1) 225deg,
+        var(--color3) 225deg,
+        var(--color3)
+      ),
+      conic-gradient(
+        var(--color3),
+        var(--color3) 90deg,
+        var(--color2) 90deg,
+        var(--color2) 180deg,
+        var(--color2) 180deg,
+        var(--color2) 225deg,
+        var(--color1) 225deg,
+        var(--color1) 270deg,
+        var(--color1) 270deg,
+        var(--color1)
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        var(--color2),
+        var(--color2) 12.5%,
+        var(--color1) 12.5%,
+        var(--color1) 25%,
+        var(--color2) 25%,
+        var(--color2) 37.5%,
+        var(--color1) 37.5%,
+        var(--color1) 50%,
+        var(--color2) 50%,
+        var(--color2) 62.5%,
+        var(--color1) 62.5%,
+        var(--color1) 75%,
+        var(--color2) 75%,
+        var(--color2) 87.5%,
+        var(--color1) 87.5%,
+        var(--color1) 100%
+      )
+    ;
+  }
+
+  &__fancy-dots {
+    background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+    background-image: 
+      radial-gradient(
+        circle at var(--unit) var(--unit),
+        var(--color2) 0,
+        var(--color2) var(--unit),
+        var(--color3) var(--unit),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at calc(var(--unit) * 4) calc(var(--unit) * 4),
+        var(--color2) 0,
+        var(--color2) var(--unit),
+        var(--color3) var(--unit),
+        var(--color3)
+      )
+    ;
+  }
+
+  &__lines {
+    background-size: calc(var(--unit) * 10) calc(var(--unit) * 8);
+    background-image:
+      linear-gradient(
+        var(--color3),
+        var(--color3) calc(var(--unit) * 7),
+        var(--color1) calc(var(--unit) * 7)
+      ),
+      conic-gradient(
+        from 0 at calc(var(--unit) * 9) calc(var(--unit) * 4),
+        var(--color3) 90deg,
+        var(--color2) 90deg,
+        var(--color2) 180deg,
+        var(--color3) 180deg
+      ),
+      conic-gradient(
+        from 0 at calc(var(--unit) * 9) calc(var(--unit) * 3),
+        var(--color2) 90deg,
+        var(--color3) 90deg
+      ),
+      conic-gradient(
+        from 0 at calc(var(--unit) * 5) calc(var(--unit) * 1),
+        var(--color2) 90deg,
+        var(--color3) 90deg
+      ),
+      conic-gradient(
+        from 0 at calc(var(--unit) * 5) calc(var(--unit) * 6),
+        var(--color1) 90deg,
+        var(--color3) 90deg
+      ),
+      conic-gradient(
+        from 0 at calc(var(--unit) * 4) calc(var(--unit) * 2),
+        var(--color3) 270deg,
+        var(--color1) 270deg
+      ),
+      conic-gradient(
+        from 0 at calc(var(--unit) * 4) calc(var(--unit) * 5),
+        var(--color3) 180deg,
+        var(--color1) 180deg,
+        var(--color1) 270deg,
+        var(--color3) 270deg
+      ),      
+      linear-gradient(
+        var(--color2),
+        var(--color2) calc(var(--unit) * 3),
+        var(--color3) calc(var(--unit) * 3),
+        var(--color3) calc(var(--unit) * 4),
+        var(--color2) calc(var(--unit) * 4),
+        var(--color2) calc(var(--unit) * 7),
+        var(--color3) calc(var(--unit) * 7),
+        var(--color3)
+      ) 
+    ;
+  }
+
+  &__spirals {
+    background-size: calc(var(--unit) * 10) calc(var(--unit) * 10);
+    background-position: calc(var(--unit) * -5) 0, calc(var(--unit) * 5) calc(var(--unit) * 1), calc(var(--unit) * -5) 0, calc(var(--unit) * 5) calc(var(--unit) * 1), calc(var(--unit) * -5) 0, calc(var(--unit) * 5) calc(var(--unit) * 1), calc(var(--unit) * -5) 0, calc(var(--unit) * 5) calc(var(--unit) * 1), calc(var(--unit) * -5) 0, calc(var(--unit) * 5) calc(var(--unit) * 1);
+    background-image:
+      radial-gradient(
+        circle at right center,
+        var(--color2) calc(var(--unit) * 1),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at left center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at right center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 3),
+        var(--color3) calc(var(--unit) * 3),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at left center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 3),
+        var(--color2) calc(var(--unit) * 3),
+        var(--color2) calc(var(--unit) * 4),
+        var(--color3) calc(var(--unit) * 4),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at right center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 4),
+        var(--color2) calc(var(--unit) * 4),
+        var(--color2) calc(var(--unit) * 5),
+        var(--color3) calc(var(--unit) * 5),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at left center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 5),
+        var(--color2) calc(var(--unit) * 5),
+        var(--color2) calc(var(--unit) * 6),
+        var(--color3) calc(var(--unit) * 6),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at right center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 6),
+        var(--color2) calc(var(--unit) * 6),
+        var(--color2) calc(var(--unit) * 7),
+        var(--color3) calc(var(--unit) * 7),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at left center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 7),
+        var(--color2) calc(var(--unit) * 7),
+        var(--color2) calc(var(--unit) * 8),
+        var(--color3) calc(var(--unit) * 8),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at right center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 8),
+        var(--color2) calc(var(--unit) * 8),
+        var(--color2) calc(var(--unit) * 9),
+        var(--color3) calc(var(--unit) * 9),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at left center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 9),
+        var(--color2) calc(var(--unit) * 9),
+        var(--color2) calc(var(--unit) * 10),
+        var(--color3) calc(var(--unit) * 10),
+        var(--color3)
+      )
+    ;
+  }  
+
+  &__crisscross {
+    background-size: calc(var(--unit) * 10) calc(var(--unit) * 10);
+    background-image: 
+      radial-gradient(
+        circle at center center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 4),
+        var(--color2) calc(var(--unit) * 4),
+        var(--color2) calc(var(--unit) * 5),
+        var(--color3) calc(var(--unit) * 5),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top left,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 4.5),
+        var(--color2) calc(var(--unit) * 4.5),
+        var(--color2) calc(var(--unit) * 5.5),
+        var(--color3) calc(var(--unit) * 5.5),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top right,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 4.5),
+        var(--color2) calc(var(--unit) * 4.5),
+        var(--color2) calc(var(--unit) * 5.5),
+        var(--color3) calc(var(--unit) * 5.5),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at bottom left,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 4.5),
+        var(--color2) calc(var(--unit) * 4.5),
+        var(--color2) calc(var(--unit) * 5.5),
+        var(--color3) calc(var(--unit) * 5.5),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at bottom right,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 4.5),
+        var(--color2) calc(var(--unit) * 4.5),
+        var(--color2) calc(var(--unit) * 5.5),
+        var(--color3) calc(var(--unit) * 5.5),
+        var(--color3)
+      )
+    ;
+  }
+
+  &__snakes {
+    background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+    background-image: 
+      radial-gradient(
+        circle at right bottom,
+        var(--color3),
+        var(--color3) 20%,
+        var(--color2) 20%,
+        var(--color2) 40%,
+        var(--color3) 40%,
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at left top,
+        var(--color3),
+        var(--color3) 30%,
+        var(--color2) 30%,
+        var(--color2) 50%,
+        var(--color3) 50%,
+        var(--color3)
+      )
+    ;
+  }
+
+  &__circles {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-position: 0 0, calc(var(--unit) * 2.5) calc(var(--unit) * 2.5);
+    background-image:
+      radial-gradient(
+        var(--color3),
+        var(--color3) 20%,
+        var(--color2) 20%,
+        var(--color2) 45%,
+        var(--color3) 45%,
+        var(--color3)
+      ),
+      radial-gradient(
+        var(--color3),
+        var(--color3) 45%,
+        var(--color2) 45%,
+        var(--color2) 65%,
+        var(--color3) 65%,
+        var(--color3)
+      )
+    ;
+  }
+
+  &__semicircles {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 10);
+    background-image: 
+      radial-gradient(
+        circle at right bottom,
+        var(--color3),
+        var(--color3) 35%,
+        var(--color2) 35%,
+        var(--color2) 45%,
+        var(--color3) 45%,
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at left top,
+        var(--color3),
+        var(--color3) 35%,
+        var(--color2) 35%,
+        var(--color2) 45%,
+        var(--color3) 45%,
+        var(--color3)
+      )
+    ;
+  }
+
+  &__chains {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-position: 0 0, 0 calc(var(--unit) * 2.5);
+    background-image: 
+      radial-gradient(
+        var(--color3),
+        var(--color3) 30%,
+        var(--color2) 30%,
+        var(--color2) 55%,
+        var(--color3) 55%,
+        var(--color3)
+      ),
+      radial-gradient(
+        var(--color3),
+        var(--color3) 30%,
+        var(--color2) 30%,
+        var(--color2) 55%,
+        var(--color3) 55%,
+        var(--color3)
+      );
+  }
+
+  &__even-circles {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-position: 0 0, calc(var(--unit) * 2.5) calc(var(--unit) * 2.5);
+    background-image: 
+      radial-gradient(
+        var(--color3),
+        var(--color3) 30%,
+        var(--color2) 30%,
+        var(--color2) 55%,
+        var(--color3) 55%,
+        var(--color3)
+      ),
+      radial-gradient(
+        var(--color3),
+        var(--color3) 30%,
+        var(--color2) 30%,
+        var(--color2) 55%,
+        var(--color3) 55%,
+        var(--color3)
+      )
+    ;
+  }
+
+  &__back-and-forth {
+    background-size: calc(var(--unit) * 8) calc(var(--unit) * 10);
+    background-image: 
+      radial-gradient(
+        circle at bottom center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 4),
+        var(--color3) calc(var(--unit) * 4),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top left,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 4),
+        var(--color3) calc(var(--unit) * 4),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top right,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 4),
+        var(--color3) calc(var(--unit) * 4),
+        var(--color3)
+      )
+    ;
+  }
+
+  &__arrowhead {
+    background-size: calc(var(--unit) * 8) calc(var(--unit) * 3);
+    background-image:
+      radial-gradient(
+        circle at bottom center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 4),
+        var(--color3) calc(var(--unit) * 4),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top left,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 4),
+        var(--color3) calc(var(--unit) * 4),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top right,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color2) calc(var(--unit) * 4),
+        var(--color3) calc(var(--unit) * 4),
+        var(--color3)
+      )
+    ;
+  }
+
+  &__interlaced {
+    background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+    background-position: 
+      0 calc(var(--unit) * -3), 
+      0 calc(var(--unit) * -3), 
+      0 calc(var(--unit) * -3), 
+      0 calc(var(--unit) * 2), 
+      0 calc(var(--unit) * 3),
+      0 calc(var(--unit) * 3);
+    background-repeat: repeat;
+    background-image:
+      radial-gradient(
+        circle at center center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 3),
+        var(--color1) calc(var(--unit) * 3),
+        var(--color1)
+      ),
+      radial-gradient(
+        circle at bottom left,
+        var(--color2) calc(var(--unit) * 3),
+        var(--color3) calc(var(--unit) * 3)
+      ),
+      radial-gradient(
+        circle at bottom right,
+        var(--color2) calc(var(--unit) * 3),
+        var(--color3) calc(var(--unit) * 3)
+      ),
+      radial-gradient(
+        circle at center center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 3),
+        var(--color3) calc(var(--unit) * 3),
+        var(--color3)
+      ),      
+      radial-gradient(
+        circle at top left,
+        var(--color2) calc(var(--unit) * 3),
+        var(--color3) calc(var(--unit) * 3)
+      ),
+      radial-gradient(
+        circle at top right,
+        var(--color2) calc(var(--unit) * 3),
+        var(--color3) calc(var(--unit) * 3)
+      )      
+    ;
+  }
+
+  &__drop {
+    background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+    background-position: 0 calc(var(--unit) * -15.8), 0 0;
+    background-image:
+      conic-gradient(
+        from 0 at 50% 70%,
+        var(--color3) 145deg,
+        var(--color2) 145deg,
+        var(--color2) 215deg,
+        var(--color3) 215deg,
+      ),
+      radial-gradient(
+        circle at center,
+        var(--color2) calc(var(--unit) * 1.5),
+        var(--color3) calc(var(--unit) * 1.5),
+        var(--color3)
+      )
+    ;
+  }
+
+  &__sprouts {
+    background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+    background-position:
+      0 calc(var(--unit) * -1),
+      0 calc(var(--unit) * -1),
+      calc(var(--unit) * 1) calc(var(--unit) * -1),
+      calc(var(--unit) * -1) calc(var(--unit) * -1);
+    background-image:
+      radial-gradient(
+        circle at center center,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 0.8),
+        var(--color3) calc(var(--unit) * 0.8),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at calc(var(--unit) * 3) calc(var(--unit) * 4),
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color1) calc(var(--unit) * 2),
+        var(--color1)
+      ),
+      radial-gradient(
+        circle at bottom left,
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2)
+      ),
+      radial-gradient(
+        circle at bottom right,
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2)
+      )
+    ;
+  }
+
+  &__eyes {
+    background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+    background-position: calc(var(--unit) * -0.2) calc(var(--unit) * -0.4), 0 0, 0 calc(var(--unit) * 3), 0 calc(var(--unit) * -3);
+    background-image:
+      radial-gradient(
+        circle at calc(var(--unit) * 3) calc(var(--unit) * 3),
+        var(--color2),
+        var(--color2) calc(var(--unit) * 0.2),
+        var(--color3) calc(var(--unit) * 0.2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at calc(var(--unit) * 3) calc(var(--unit) * 3),
+        var(--color1),
+        var(--color1) calc(var(--unit) * 0.8),
+        var(--color3) calc(var(--unit) * 0.8),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at calc(var(--unit) * 3) calc(var(--unit) * -1),
+        var(--color2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at calc(var(--unit) * 3) calc(var(--unit) * 7),
+        var(--color2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      )
+    ;
+  }
+
+  &__fish {
+    background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+    background-position: calc(var(--unit) * 0.5) 0, calc(var(--unit) * 0.6) calc(var(--unit) * -0.2), calc(var(--unit) * 0.8) 0, 0 calc(var(--unit) * 3), 0 calc(var(--unit) * -3);
+    background-image:
+      conic-gradient(
+        from 0 at calc(var(--unit) * 1) calc(var(--unit) * 3),
+        var(--color3) 225deg,
+        var(--color2) 225deg,
+        var(--color2) 315deg,
+        var(--color3) 315deg
+      ),
+      radial-gradient(
+        circle at calc(var(--unit) * 3) calc(var(--unit) * 3),
+        var(--color2),
+        var(--color2) calc(var(--unit) * 0.2),
+        var(--color3) calc(var(--unit) * 0.2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at calc(var(--unit) * 3) calc(var(--unit) * 3),
+        var(--color1),
+        var(--color1) calc(var(--unit) * 0.4),
+        var(--color3) calc(var(--unit) * 0.4),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at calc(var(--unit) * 3) calc(var(--unit) * -1),
+        var(--color2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at calc(var(--unit) * 3) calc(var(--unit) * 7),
+        var(--color2),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      )
+    ;
+  }
+
+  &__spinner {
+    background-size: calc(var(--unit) * 8) calc(var(--unit) * 8);
+    background-position: calc(var(--unit) * -1.5) 0, 0 calc(var(--unit) * -1.5), calc(var(--unit) * 1.5) 0, 0 calc(var(--unit) * 1.5), calc(var(--unit) * -1.5) calc(var(--unit) * -1.5), calc(var(--unit) * 1.5) calc(var(--unit) * 1.5), calc(var(--unit) * -1.5) calc(var(--unit) * 1.5), calc(var(--unit) * 1.5) calc(var(--unit) * -1.5), calc(var(--unit) * -2.5) calc(var(--unit) * 2.5);
+    background-image:
+      radial-gradient(
+        var(--color1),
+        var(--color1) calc(var(--unit) * 0.5),
+        var(--color3) calc(var(--unit) * 0.5),
+        var(--color3)
+      ),
+      radial-gradient(
+        var(--color1),
+        var(--color1) calc(var(--unit) * 0.5),
+        var(--color3) calc(var(--unit) * 0.5),
+        var(--color3)
+      ),
+      radial-gradient(
+        var(--color1),
+        var(--color1) calc(var(--unit) * 0.5),
+        var(--color3) calc(var(--unit) * 0.5),
+        var(--color3)
+      ),
+      radial-gradient(
+        var(--color1),
+        var(--color1) calc(var(--unit) * 0.5),
+        var(--color3) calc(var(--unit) * 0.5),
+        var(--color3)
+      ),    
+      radial-gradient(
+        var(--color2),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color3)
+      ),
+      radial-gradient(
+        var(--color2),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color3)
+      ),
+      radial-gradient(
+        var(--color2),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color3)
+      ),
+      radial-gradient(
+        var(--color2),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color3)
+      ),
+      conic-gradient(
+        from 0 at calc(var(--unit) * 5) calc(var(--unit) * 3),
+        var(--color2),
+        var(--color2) 90deg,
+        var(--color3) 90deg,
+        var(--color3)
+      )
+    ;    
+  }
+
+  &__blades {
+    background-size: calc(var(--unit) * 6) calc(var(--unit) * 8);
+    background-image:
+      radial-gradient(
+        circle at calc(var(--unit) * 9) calc(var(--unit) * -1),
+        var(--color2),
+        var(--color2) calc(var(--unit) * 8),
+        var(--color3) calc(var(--unit) * 8),
+        var(--color3)
+      )
+    ;
+  }
+
+  &__concentric {
+    background-size: calc(var(--unit) * 10) calc(var(--unit) * 10);
+    background-position: 0 0, 0 calc(var(--unit) * 1), calc(var(--unit) * -1) calc(var(--unit) * 1), calc(var(--unit) * -1) 0, 0 0;
+    background-image:
+      radial-gradient(
+        circle at calc(var(--unit) * 5) calc(var(--unit) * 5),
+        var(--color2),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at calc(var(--unit) * 5) calc(var(--unit) * 5),
+        var(--color1),
+        var(--color1) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at calc(var(--unit) * 5) calc(var(--unit) * 5),
+        var(--color2),
+        var(--color2) calc(var(--unit) * 3),
+        var(--color3) calc(var(--unit) * 3),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at calc(var(--unit) * 5) calc(var(--unit) * 5),
+        var(--color1),
+        var(--color1) calc(var(--unit) * 4),
+        var(--color3) calc(var(--unit) * 4),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at calc(var(--unit) * 5) calc(var(--unit) * 5),
+        var(--color2),
+        var(--color2) calc(var(--unit) * 5),
+        var(--color3) calc(var(--unit) * 5),
+        var(--color3)
+      )
+    ;
+  }
+
+  &__corkscrew {
+    background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+    background-position: 0 0, calc(var(--unit) * -3) calc(var(--unit) * -1.5), calc(var(--unit) * 3) calc(var(--unit) * 1.5);
+    background-image:
+      radial-gradient(
+        circle at calc(var(--unit) * 3) calc(var(--unit) * 3),
+        var(--color1),
+        var(--color1) calc(var(--unit) * 1.5),
+        var(--color3) calc(var(--unit) * 1.5),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at right center,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 3),
+        var(--color3) calc(var(--unit) * 3),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at left center,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 3),
+        var(--color3) calc(var(--unit) * 3),
+        var(--color3)
+      )
+    ;
+  }
+
+  &__optical {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-image:
+      radial-gradient(
+        circle at 0 25%,
+        var(--color1),
+        var(--color1) calc(var(--unit) * 1.25),
+        var(--color3) calc(var(--unit) * 1.25),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at 50% 25%,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 1.25),
+        var(--color3) calc(var(--unit) * 1.25),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at 50% 75%,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 1.25),
+        var(--color3) calc(var(--unit) * 1.25),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at 100% 75%,
+        var(--color1),
+        var(--color1) calc(var(--unit) * 1.25),
+        var(--color3) calc(var(--unit) * 1.25),
+        var(--color3)
+      ),
+      linear-gradient(
+        45deg,
+        var(--color1),
+        var(--color1) 25%,
+        var(--color3) 25%,
+        var(--color3) 75%,
+        var(--color1) 75%,
+        var(--color1)        
+      ),
+      conic-gradient(
+        var(--color2),
+        var(--color2) 45deg,
+        var(--color1) 45deg,
+        var(--color1) 90deg,
+        var(--color2) 90deg,
+        var(--color2) 225deg,
+        var(--color1) 225deg,
+        var(--color1) 270deg,
+        var(--color2) 270deg,
+        var(--color2)
+      )
+    ;
+  }
+
+  &__cylinder {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-image: 
+      radial-gradient(
+        circle at center center,
+        var(--color2),
+        var(--color2) calc(var(--unit) * 0.3),
+        var(--color3) calc(var(--unit) * 0.3),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top left,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2.25),
+        var(--color2) calc(var(--unit) * 2.25),
+        var(--color2) calc(var(--unit) * 2.75),
+        var(--color3) calc(var(--unit) * 2.75),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top right,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2.25),
+        var(--color2) calc(var(--unit) * 2.25),
+        var(--color2) calc(var(--unit) * 2.75),
+        var(--color3) calc(var(--unit) * 2.75),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at bottom left,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2.25),
+        var(--color2) calc(var(--unit) * 2.25),
+        var(--color2) calc(var(--unit) * 2.75),
+        var(--color3) calc(var(--unit) * 2.75),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at bottom right,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 2.25),
+        var(--color2) calc(var(--unit) * 2.25),
+        var(--color2) calc(var(--unit) * 2.75),
+        var(--color3) calc(var(--unit) * 2.75),
+        var(--color3)
+      )
+    ;
+  }
+
+  &__waves {
+    background-size: calc(var(--unit) * 6) calc(var(--unit) * 4);
+    background-image: 
+      radial-gradient(
+        circle at bottom center,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top left,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at top right,
+        var(--color3),
+        var(--color3) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 1),
+        var(--color2) calc(var(--unit) * 2),
+        var(--color3) calc(var(--unit) * 2),
+        var(--color3)
+      )
+    ;
+  }
+
+  &__distort {
+    background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+    background-image: 
+      radial-gradient(
+        circle at right bottom,
+        var(--color3),
+        var(--color3) 20%,
+        var(--color2) 20%,
+        var(--color2) 40%,
+        var(--color3) 40%,
+        var(--color3)
+      ),
+      radial-gradient(
+        circle at left top,
+        var(--color3),
+        var(--color3) 50%,
+        var(--color2) 50%,
+        var(--color2) 65%,
+        var(--color3) 65%,
+        var(--color3)
+      )
+    ;
+  }
+
+  &__studs {
+    background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+    background-position: 0 0, calc(var(--unit) * 2.5) calc(var(--unit) * 2.5);
+    background-color: var(--color2);
+    background-image:
+      radial-gradient(
+        var(--color1),
+        var(--color1) 30%,
+        var(--color1) 30%,
+        var(--color1) 55%,
+        var(--color3) 55%,
+        var(--color3)
+      ),
+      radial-gradient(
+        var(--color1),
+        var(--color1) 30%,
+        var(--color1) 30%,
+        var(--color1) 55%,
+        var(--color3) 55%,
+        var(--color3)
+      )
+    ;
+  }
+
+  &__circuit {
+    background-size: calc(var(--unit) * 4) calc(var(--unit) * 4);
+    background-position: calc(var(--unit) * 2) calc(var(--unit) * 2), 0 0;
+    background-image: 
+      radial-gradient(
+        var(--color2) calc(var(--unit) * 1),
+        var(--color3) calc(var(--unit) * 1)
+      ), 
+      repeating-linear-gradient(
+        45deg, 
+        var(--color3),
+        var(--color3) 47%,
+        var(--color2) 47%,
+        var(--color2) 53%,
+        var(--color3) 53%,
+        var(--color3)
+      )
+    ;
+  }
+
+  &__cloth {
+      background-size: calc(var(--unit) * 4) calc(var(--unit) * 4);
+      background-color: var(--color2);
+      background-image: 
+        conic-gradient(
+          var(--color3),
+          var(--color3) 27deg,
+          var(--color1) 27deg,
+          var(--color1) 65deg,
+          var(--color3) 65deg,
+          var(--color3) 119deg,
+          var(--color1) 119deg,
+          var(--color1) 155deg,
+          var(--color3) 155deg,
+          var(--color3) 209deg,
+          var(--color1) 209deg,
+          var(--color1) 245deg,
+          var(--color3) 245deg,
+          var(--color3) 299deg,
+          var(--color1) 299deg,
+          var(--color1) 335deg,
+          var(--color3) 335deg,
+          var(--color3)
+        ),    
+        radial-gradient(
+          circle at var(--unit) var(--unit), 
+          var(--color1),
+          var(--color1) var(--unit),
+          var(--color3) var(--unit),
+          var(--color3)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 3) var(--unit),
+          var(--color1),
+          var(--color1) var(--unit),
+          var(--color3) var(--unit),
+          var(--color3)
+        ),
+        radial-gradient(
+          circle at var(--unit) calc(var(--unit) * 3),
+          var(--color1),
+          var(--color1) var(--unit),
+          var(--color3) var(--unit),
+          var(--color3)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 3) calc(var(--unit) * 3),
+          var(--color1),
+          var(--color1) var(--unit),
+          var(--color3) var(--unit),
+          var(--color3)
+        ),
+        linear-gradient(
+          var(--color2),
+          var(--color2) var(--unit),
+          var(--color3) var(--unit),
+          var(--color3) calc(var(--unit) * 3),
+          var(--color2) calc(var(--unit) * 3),
+          var(--color2)
+        ),
+        linear-gradient(
+          90deg,
+          var(--color2),
+          var(--color2) var(--unit),
+          var(--color3) var(--unit),
+          var(--color3) calc(var(--unit) * 3),
+          var(--color2) calc(var(--unit) * 3),
+          var(--color2)
+        )
+      ;
+    }
+
+    &__burst {
+      background-size: calc(var(--unit) * 8) calc(var(--unit) * 8);
+      background-image:
+        radial-gradient(
+          circle at center center,
+          var(--color3) calc(var(--unit) * 3.5),
+          var(--color1) calc(var(--unit) * 3.5),
+          var(--color1)
+        ),
+        conic-gradient(
+          var(--color1),
+          var(--color1) 10deg,
+          var(--color2) 10deg,
+          var(--color2) 20deg,
+          var(--color1) 20deg,
+          var(--color1) 30deg,
+          var(--color2) 30deg,
+          var(--color2) 40deg,
+          var(--color1) 40deg,
+          var(--color1) 50deg,
+          var(--color2) 50deg,
+          var(--color2) 60deg,
+          var(--color1) 60deg,
+          var(--color1) 70deg,
+          var(--color2) 70deg,
+          var(--color2) 80deg,
+          var(--color1) 80deg,
+          var(--color1) 90deg,
+          var(--color2) 90deg,
+          var(--color2) 100deg,
+          var(--color1) 100deg,
+          var(--color1) 110deg,
+          var(--color2) 110deg,
+          var(--color2) 120deg,
+          var(--color1) 120deg,
+          var(--color1) 130deg,
+          var(--color2) 130deg,
+          var(--color2) 140deg,
+          var(--color1) 140deg,
+          var(--color1) 150deg,
+          var(--color2) 150deg,
+          var(--color2) 160deg,
+          var(--color1) 160deg,
+          var(--color1) 170deg,
+          var(--color2) 170deg,
+          var(--color2) 180deg,
+          var(--color1) 180deg,
+          var(--color1) 190deg,
+          var(--color2) 190deg,
+          var(--color2) 200deg,
+          var(--color1) 200deg,
+          var(--color1) 210deg,
+          var(--color2) 210deg,
+          var(--color2) 220deg,
+          var(--color1) 220deg,
+          var(--color1) 230deg,
+          var(--color2) 230deg,
+          var(--color2) 240deg,
+          var(--color1) 240deg,
+          var(--color1) 250deg,
+          var(--color2) 250deg,
+          var(--color2) 260deg,
+          var(--color1) 260deg,
+          var(--color1) 270deg,
+          var(--color2) 270deg,
+          var(--color2) 280deg,
+          var(--color1) 280deg,
+          var(--color1) 290deg,
+          var(--color2) 290deg,
+          var(--color2) 300deg,
+          var(--color1) 300deg,
+          var(--color1) 310deg,
+          var(--color2) 310deg,
+          var(--color2) 320deg,
+          var(--color1) 320deg,
+          var(--color1) 330deg,
+          var(--color2) 330deg,
+          var(--color2) 340deg,
+          var(--color1) 340deg,
+          var(--color1) 350deg,
+          var(--color2) 350deg,
+          var(--color2) 360deg
+        )
+    }
+
+    &__lava {
+      background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+      background-image:
+        radial-gradient(
+          circle at center center,
+          var(--color3) calc(var(--unit) * 2.5),
+          var(--color1) calc(var(--unit) * 2.5),
+          var(--color1)
+        ),
+        conic-gradient(
+          var(--color3),
+          var(--color3) 90deg,
+          var(--color2) 90deg,
+          var(--color2) 180deg,
+          var(--color3) 180deg,
+          var(--color3) 270deg,
+          var(--color2) 270deg,
+          var(--color2) 360deg
+        )
+    }
+
+    &__crops {
+      background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+      background-image:
+        linear-gradient(
+          90deg,
+          var(--color2) 0%,
+          var(--color2) 5%,
+          var(--color3) 5%,
+          var(--color3) 95%,
+          var(--color2) 95%,
+          var(--color2) 100%
+        ),
+        linear-gradient(
+          var(--color2) 0%,
+          var(--color2) 5%,
+          var(--color3) 5%,
+          var(--color3) 95%,
+          var(--color2) 95%,
+          var(--color2) 100%
+        ),
+        linear-gradient(
+          45deg,
+          var(--color2) 0%,
+          var(--color2) 5%,
+          var(--color1) 5%,
+          var(--color1) 10%,
+          var(--color2) 10%,
+          var(--color2) 15%,
+          var(--color1) 15%,
+          var(--color1) 20%,
+          var(--color2) 20%,
+          var(--color2) 25%,
+          var(--color1) 25%,
+          var(--color1) 30%,
+          var(--color2) 30%,
+          var(--color2) 35%,
+          var(--color1) 35%,
+          var(--color1) 40%,
+          var(--color2) 40%,
+          var(--color2) 45%,
+          var(--color1) 45%,
+          var(--color1) 50%,
+          var(--color3) 50%,
+          var(--color3) 100%
+        ),
+        linear-gradient(
+          -45deg,
+          var(--color2) 0%,
+          var(--color2) 5%,
+          var(--color3) 5%,
+          var(--color3) 10%,
+          var(--color2) 10%,
+          var(--color2) 15%,
+          var(--color3) 15%,
+          var(--color3) 20%,
+          var(--color2) 20%,
+          var(--color2) 25%,
+          var(--color3) 25%,
+          var(--color3) 30%,
+          var(--color2) 30%,
+          var(--color2) 35%,
+          var(--color3) 35%,
+          var(--color3) 40%,
+          var(--color2) 40%,
+          var(--color2) 45%,
+          var(--color3) 45%,
+          var(--color3) 50%,
+          var(--color2) 50%,
+          var(--color2) 55%,
+          var(--color3) 55%,
+          var(--color3) 60%,
+          var(--color2) 60%,
+          var(--color2) 65%,
+          var(--color3) 65%,
+          var(--color3) 70%,
+          var(--color2) 70%,
+          var(--color2) 75%,
+          var(--color3) 75%,
+          var(--color3) 80%,
+          var(--color2) 80%,
+          var(--color2) 85%,
+          var(--color3) 85%,
+          var(--color3) 90%,
+          var(--color2) 90%,
+          var(--color2) 95%,
+          var(--color3) 95%,
+          var(--color3) 100%
+        )
+      ;
+    }
+
+    &__mountains {
+      background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+      background-image:
+        linear-gradient(
+          45deg,
+          var(--color2) 0%,
+          var(--color2) 5%,
+          var(--color1) 5%,
+          var(--color1) 10%,
+          var(--color2) 10%,
+          var(--color2) 15%,
+          var(--color1) 15%,
+          var(--color1) 20%,
+          var(--color2) 20%,
+          var(--color2) 25%,
+          var(--color1) 25%,
+          var(--color1) 30%,
+          var(--color2) 30%,
+          var(--color2) 35%,
+          var(--color1) 35%,
+          var(--color1) 40%,
+          var(--color2) 40%,
+          var(--color2) 45%,
+          var(--color1) 45%,
+          var(--color1) 50%,
+          var(--color3) 50%,
+          var(--color3) 100%
+        ),
+        linear-gradient(
+          -45deg,
+          var(--color2) 0%,
+          var(--color2) 5%,
+          var(--color1) 5%,
+          var(--color1) 10%,
+          var(--color2) 10%,
+          var(--color2) 15%,
+          var(--color1) 15%,
+          var(--color1) 20%,
+          var(--color2) 20%,
+          var(--color2) 25%,
+          var(--color1) 25%,
+          var(--color1) 30%,
+          var(--color2) 30%,
+          var(--color2) 35%,
+          var(--color1) 35%,
+          var(--color1) 40%,
+          var(--color2) 40%,
+          var(--color2) 45%,
+          var(--color1) 45%,
+          var(--color1) 50%,
+          var(--color3) 50%,
+          var(--color3) 100%
+        )
+      ;
+    }
+
+    &__pyramids {
+      background-size: calc(var(--unit) * 10) calc(var(--unit) * 10);
+      background-image:
+        linear-gradient(
+          -45deg,
+          var(--color2) 0%,
+          var(--color2) 15%,
+          var(--color3) 15%,
+          var(--color3) 85%,
+          var(--color1) 85%,
+          var(--color1) 100%
+        ),
+        linear-gradient(
+          45deg,
+          var(--color1) 0%,
+          var(--color1) 15%,
+          var(--color3) 15%,
+          var(--color3) 85%,
+          var(--color2) 85%,
+          var(--color2) 100%
+        ),
+        linear-gradient(
+          -45deg,
+          var(--color2) 0%,
+          var(--color2) 5%,
+          var(--color3) 5%,
+          var(--color3) 10%,
+          var(--color2) 10%,
+          var(--color2) 15%,
+          var(--color3) 15%,
+          var(--color3) 20%,
+          var(--color2) 20%,
+          var(--color2) 25%,
+          var(--color3) 25%,
+          var(--color3) 30%,
+          var(--color2) 30%,
+          var(--color2) 35%,
+          var(--color3) 35%,
+          var(--color3) 40%,
+          var(--color2) 40%,
+          var(--color2) 45%,
+          var(--color3) 45%,
+          var(--color3) 50%,
+          var(--color2) 50%,
+          var(--color2) 55%,
+          var(--color3) 55%,
+          var(--color3) 60%,
+          var(--color2) 60%,
+          var(--color2) 65%,
+          var(--color3) 65%,
+          var(--color3) 70%,
+          var(--color2) 70%,
+          var(--color2) 75%,
+          var(--color3) 75%,
+          var(--color3) 80%,
+          var(--color2) 80%,
+          var(--color2) 85%,
+          var(--color3) 85%,
+          var(--color3) 90%,
+          var(--color2) 90%,
+          var(--color2) 95%,
+          var(--color3) 95%,
+          var(--color3) 100%
+        )
+      ;
+    }
+
+    &__infinite-drops {
+      background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+      background-image:
+        radial-gradient(
+          circle at var(--unit) var(--unit),
+          var(--color2) var(--unit),
+          var(--color3) var(--unit)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 4) calc(var(--unit) * 4),
+          var(--color2) calc(var(--unit) * 2),
+          var(--color3) calc(var(--unit) * 2)
+        ),
+        linear-gradient(
+          -45deg,
+          var(--color2) 0%,
+          var(--color2) 18%,
+          var(--color3) 18%,
+          var(--color3) 92%,
+          var(--color2) 92%,
+          var(--color2)
+        )
+      ;
+    }
+
+    &__people-on-tables {
+      background-size: calc(var(--unit) * 7) calc(var(--unit) * 7);
+      background-position: calc(var(--unit) * -0.5) calc(var(--unit) * -0.5), calc(var(--unit) * -0.5) calc(var(--unit) * -0.5), calc(var(--unit) * -0.5) calc(var(--unit) * -0.5), calc(var(--unit) * -0.5) calc(var(--unit) * -0.5), 0 0, 0 0, 0 0, 0 0;
+      background-image:
+        radial-gradient(
+          circle at bottom right,
+          var(--color2) calc(var(--unit) * 2),
+          var(--color3) calc(var(--unit) * 2)
+        ),
+        radial-gradient(
+          circle at bottom left,
+          var(--color2) calc(var(--unit) * 2),
+          var(--color3) calc(var(--unit) * 2)
+        ),
+        radial-gradient(
+          circle at top right,
+          var(--color2) calc(var(--unit) * 2),
+          var(--color3) calc(var(--unit) * 2)
+        ),
+        radial-gradient(
+          circle at top left,
+          var(--color2) calc(var(--unit) * 2),
+          var(--color3) calc(var(--unit) * 2)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 3) calc(var(--unit) * 1),
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 3) calc(var(--unit) * 5),
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 1) calc(var(--unit) * 3),
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 5) calc(var(--unit) * 3),
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        )        
+      ;
+    }
+
+    &__mixed {
+      background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+      background-color: var(--color2);
+      background-image:
+        radial-gradient(
+          circle at left center,
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        radial-gradient(
+          circle at right center,
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        conic-gradient(
+          var(--color3),
+          var(--color3) 45deg,
+          var(--color1) 45deg,
+          var(--color1) 135deg,
+          var(--color3) 135deg,
+          var(--color3) 225deg,
+          var(--color1) 225deg,
+          var(--color1) 315deg,
+          var(--color3) 315deg
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 3) calc(var(--unit) * 7.5),
+          var(--color1) calc(var(--unit) * 3),
+          var(--color3) calc(var(--unit) * 3)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 3) calc(var(--unit) * -1.5),
+          var(--color1) calc(var(--unit) * 3),
+          var(--color3) calc(var(--unit) * 3)
+        )
+      ;
+    }
+
+    &__brackets {
+      background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+      background-image:
+        linear-gradient(
+          -45deg,
+          var(--color2) 0%,
+          var(--color2) 25%,
+          var(--color3) 25%,
+          var(--color3) 75%,
+          var(--color2) 75%
+        ),
+        radial-gradient(
+          circle at center center,
+          var(--color2) calc(var(--unit) * 2.5),
+          var(--color3) calc(var(--unit) * 2.5)
+        )        
+      ;
+    }
+
+    &__catupecu {
+      background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+      background-image:
+        linear-gradient(
+          -45deg,
+          var(--color2) 0%,
+          var(--color2) 25%,
+          var(--color3) 25%,
+          var(--color3) 75%,
+          var(--color2) 75%
+        ),
+        linear-gradient(
+          45deg,
+          var(--color2) 0%,
+          var(--color2) 25%,
+          var(--color3) 25%,
+          var(--color3) 75%,
+          var(--color2) 75%
+        ),
+        linear-gradient(
+          var(--color1) 0%,
+          var(--color1) 25%,
+          var(--color3) 25%,
+          var(--color3) 75%,
+          var(--color1) 75%
+        ),
+        linear-gradient(
+          90deg,
+          var(--color1) 0%,
+          var(--color1) 25%,
+          var(--color2) 25%,
+          var(--color2) 75%,
+          var(--color1) 75%
+        )
+      ;
+    }
+
+    &__45-degrees {
+      background-size: calc(var(--unit) * 4) calc(var(--unit) * 4);
+      background-image:
+        linear-gradient(
+          -45deg,
+          var(--color2) 50%,
+          var(--color3) 50%
+        )
+      ;
+    }
+
+    &__the-game {
+      background-size: calc(var(--unit) * 8) calc(var(--unit) * 8);
+      background-image:
+        linear-gradient(
+          -45deg,
+          var(--color2) 0%,
+          var(--color2) 5%,
+          var(--color3) 5%,
+          var(--color3) 20%,
+          var(--color2) 20%,
+          var(--color2) 30%,
+          var(--color3) 30%,
+          var(--color3) 70%,
+          var(--color2) 70%,
+          var(--color2) 80%,
+          var(--color3) 80%,
+          var(--color3) 95%,
+          var(--color2) 95%,
+          var(--color2) 100%
+        ),
+        linear-gradient(
+          45deg,
+          var(--color2) 0%,
+          var(--color2) 5%,
+          var(--color3) 5%,
+          var(--color3) 20%,
+          var(--color2) 20%,
+          var(--color2) 30%,
+          var(--color3) 30%,
+          var(--color3) 70%,
+          var(--color2) 70%,
+          var(--color2) 80%,
+          var(--color3) 80%,
+          var(--color3) 95%,
+          var(--color2) 95%,
+          var(--color2) 100%
+        )
+      ;
+    }
+
+    &__pills {
+      background-size: calc(var(--unit) * 10) calc(var(--unit) * 10);
+      background-position: calc(var(--unit) * -1.8) calc(var(--unit) * 6), 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+      background-image:
+        conic-gradient(
+          from 0 at calc(var(--unit) * 9.6) calc(var(--unit) * 4),
+          var(--color1) 90deg,
+          var(--color3) 90deg
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 8) calc(var(--unit) * 8),
+          var(--color2) calc(var(--unit) * 2),
+          var(--color3) calc(var(--unit) * 2)
+        ),
+        linear-gradient(
+          var(--color3) calc(var(--unit) * 7.8),
+          var(--color1) calc(var(--unit) * 7.8),
+          var(--color1) calc(var(--unit) * 8.2),
+          var(--color3) calc(var(--unit) * 8.2)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 3) calc(var(--unit) * 8),
+          var(--color2) calc(var(--unit) * 2),
+          var(--color3) calc(var(--unit) * 2)
+        ),
+        linear-gradient(
+          90deg,
+          var(--color3) calc(var(--unit) * 2.8),
+          var(--color1) calc(var(--unit) * 2.8),
+          var(--color1) calc(var(--unit) * 3.2),
+          var(--color3) calc(var(--unit) * 3.2)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 3) calc(var(--unit) * 3),
+          var(--color2) calc(var(--unit) * 2),
+          var(--color3) calc(var(--unit) * 2)
+        ),
+        linear-gradient(
+          var(--color3) calc(var(--unit) * 2.8),
+          var(--color1) calc(var(--unit) * 2.8),
+          var(--color1) calc(var(--unit) * 3.2),
+          var(--color3) calc(var(--unit) * 3.2)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 8) calc(var(--unit) * 3),
+          var(--color2) calc(var(--unit) * 2),
+          var(--color3) calc(var(--unit) * 2)
+        )
+      ;
+    }
+
+    &__knot {
+      background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+      background-position: calc(var(--unit) * -1.5) calc(var(--unit) * 3.5), calc(var(--unit) * -1.5) calc(var(--unit) * 2), calc(var(--unit) * -3.5) calc(var(--unit) * 1.5), calc(var(--unit) * -2) calc(var(--unit) * 1.5), 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+      background-image:
+        conic-gradient(
+          from 0 at calc(var(--unit) * 3) calc(var(--unit) * 0.5),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 3) calc(var(--unit) * 0.5),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 5.5) calc(var(--unit) * 3),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 5.5) calc(var(--unit) * 3),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 1.5) calc(var(--unit) * 1.5),
+          var(--color1) calc(var(--unit) * 0.5),
+          var(--color3) calc(var(--unit) * 0.5)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 1.5) calc(var(--unit) * 1.5),
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 4.5) calc(var(--unit) * 1.5),
+          var(--color1) calc(var(--unit) * 0.5),
+          var(--color3) calc(var(--unit) * 0.5)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 4.5) calc(var(--unit) * 1.5),
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 1.5) calc(var(--unit) * 4.5),
+          var(--color1) calc(var(--unit) * 0.5),
+          var(--color3) calc(var(--unit) * 0.5)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 1.5) calc(var(--unit) * 4.5),
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 4.5) calc(var(--unit) * 4.5),
+          var(--color1) calc(var(--unit) * 0.5),
+          var(--color3) calc(var(--unit) * 0.5)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 4.5) calc(var(--unit) * 4.5),
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        )
+      ;
+    }
+
+    &__stitches {
+      background-size: calc(var(--unit) * 4) calc(var(--unit) * 4);
+      background-position: calc(var(--unit) * -2) 0, 0 calc(var(--unit) * 3), 0 0, calc(var(--unit) * -3) calc(var(--unit) * 2);
+      background-image: 
+        conic-gradient(
+          from 0 at calc(var(--unit) * 2) calc(var(--unit) * 1),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 2) calc(var(--unit) * 1),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 3) calc(var(--unit) * 2),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 3) calc(var(--unit) * 2),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        )
+      ;
+    }
+
+    &__parker {
+      background-size: calc(var(--unit) * 7) calc(var(--unit) * 7);
+      background-position: calc(var(--unit) * -3) calc(var(--unit) * 3), calc(var(--unit) * -2) calc(var(--unit) * 2), 0 0, 0 0, calc(var(--unit) * -1) calc(var(--unit) * 1);
+      background-image:
+        conic-gradient(
+          from 0 at calc(var(--unit) * 6) calc(var(--unit) * 1),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 4) calc(var(--unit) * 3),
+          var(--color1) 90deg,
+          var(--color3) 90deg
+        ),
+        linear-gradient(
+          var(--color3) 42%,
+          var(--color1) 42%,
+          var(--color1) 58%,
+          var(--color3) 58%
+        ),
+        linear-gradient(
+          90deg,
+          var(--color3) 42%,
+          var(--color1) 42%,
+          var(--color1) 58%,
+          var(--color3) 58%
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 2) calc(var(--unit) * 5),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        )
+      ;
+    }
+
+    &__carpet {
+      background-size: calc(var(--unit) * 14) calc(var(--unit) * 14);
+      background-position: calc(var(--unit) * -10) calc(var(--unit) * 3), calc(var(--unit) * -9) calc(var(--unit) * 2), calc(var(--unit) * -8) calc(var(--unit) * 1), calc(var(--unit) * -7) 0, calc(var(--unit) * -3) calc(var(--unit) * 3), calc(var(--unit) * -2) calc(var(--unit) * 2), calc(var(--unit) * -1) calc(var(--unit) * 1), 0 0, calc(var(--unit) * -10) calc(var(--unit) * 10), calc(var(--unit) * -9) calc(var(--unit) * 9), calc(var(--unit) * -8) calc(var(--unit) * 8), calc(var(--unit) * -7) calc(var(--unit) * 7), calc(var(--unit) * -3) calc(var(--unit) * 10), calc(var(--unit) * -2) calc(var(--unit) * 9), calc(var(--unit) * -1) calc(var(--unit) * 8), 0 calc(var(--unit) * 7);
+      background-image:
+        conic-gradient(
+          from 0 at calc(var(--unit) * 13) calc(var(--unit) * 1),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 11) calc(var(--unit) * 3),
+          var(--color1) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 9) calc(var(--unit) * 5),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 7) calc(var(--unit) * 7),
+          var(--color1) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 13) calc(var(--unit) * 1),
+          var(--color1) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 11) calc(var(--unit) * 3),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 9) calc(var(--unit) * 5),
+          var(--color1) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 7) calc(var(--unit) * 7),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 13) calc(var(--unit) * 1),
+          var(--color1) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 11) calc(var(--unit) * 3),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 9) calc(var(--unit) * 5),
+          var(--color1) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 7) calc(var(--unit) * 7),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 13) calc(var(--unit) * 1),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 11) calc(var(--unit) * 3),
+          var(--color1) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 9) calc(var(--unit) * 5),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 7) calc(var(--unit) * 7),
+          var(--color1) 90deg,
+          var(--color3) 90deg
+        )
+      ;
+    }
+
+    &__boxed {
+      background-size: calc(var(--unit) * 8) calc(var(--unit) * 8);
+      background-image:
+        radial-gradient(
+          circle at calc(var(--unit) * 2) calc(var(--unit) * 2),
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 6) calc(var(--unit) * 2),
+          var(--color1) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 6) calc(var(--unit) * 6),
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 2) calc(var(--unit) * 6),
+          var(--color1) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        conic-gradient(
+          var(--color2) 90deg,
+          var(--color3) 90deg,
+          var(--color3) 180deg,
+          var(--color2) 180deg,
+          var(--color2) 270deg,
+          var(--color3) 270deg
+        )
+      ;
+    }
+
+    &__martha {
+      background-size: calc(var(--unit) * 8) calc(var(--unit) * 8);
+      background-position: calc(var(--unit) * -2) calc(var(--unit) * 2), 0 0, 0 0, 0 0, 0 0;
+      background-image:
+        conic-gradient(
+          from 0 at calc(var(--unit) * 4) calc(var(--unit) * 4),
+          var(--color1) 90deg,
+          var(--color3) 90deg
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 2) calc(var(--unit) * 2),
+          var(--color2) calc(var(--unit) * 2),
+          var(--color3) calc(var(--unit) * 2)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 6) calc(var(--unit) * 2),
+          var(--color2) calc(var(--unit) * 2),
+          var(--color3) calc(var(--unit) * 2)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 6) calc(var(--unit) * 6),
+          var(--color2) calc(var(--unit) * 2),
+          var(--color3) calc(var(--unit) * 2)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 2) calc(var(--unit) * 6),
+          var(--color2) calc(var(--unit) * 2),
+          var(--color3) calc(var(--unit) * 2)
+        )
+      ;
+    }
+
+    &__cubes {
+      background-size: calc(var(--unit) * 8) calc(var(--unit) * 12);
+      background-position: calc(var(--unit) * 4) calc(var(--unit) * 6), top left, top left;
+      background-image:
+        conic-gradient(
+          var(--color3),
+          var(--color3) 60deg,
+          var(--color2) 60deg,
+          var(--color2) 120deg,
+          var(--color3) 120deg,
+          var(--color3) 240deg,
+          var(--color2) 240deg,
+          var(--color2) 300deg,
+          var(--color3) 300deg,
+          var(--color3)
+        ),
+        conic-gradient(
+          var(--color3),
+          var(--color3) 60deg,
+          var(--color2) 60deg,
+          var(--color2) 120deg,
+          var(--color1) 120deg,
+          var(--color1) 180deg,
+          var(--color3) 180deg,
+          var(--color3) 240deg,
+          var(--color2) 240deg,
+          var(--color2) 300deg,
+          var(--color1) 300deg,
+          var(--color1)
+        ),
+        repeating-linear-gradient(
+          30deg,
+          var(--color2) 0,
+          var(--color2) calc(var(--unit) / 4),
+          var(--color1) calc(var(--unit) / 4),
+          var(--color1) calc(var(--unit) / 2)
+        )
+      ;
+    }
+
+    &__ninja {
+      background-size: calc(var(--unit) * 4) calc(var(--unit) * 4);
+      background-position: calc(var(--unit) * 2) calc(var(--unit) * -1), calc(var(--unit) * -2) calc(var(--unit) * 1), calc(var(--unit) * -1) 0, calc(var(--unit) * 1) 0, calc(var(--unit) * -1) calc(var(--unit) * 1);
+      background-image:
+        conic-gradient(
+          var(--color3) 225deg,
+          var(--color2) 225deg,
+          var(--color2) 270deg,
+          var(--color3) 270deg
+        ),
+        conic-gradient(
+          var(--color3) 45deg,
+          var(--color2) 45deg,
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          var(--color3) 90deg,
+          var(--color2) 90deg,
+          var(--color2) 135deg,
+          var(--color3) 135deg
+        ),
+        conic-gradient(
+          var(--color3) 270deg,
+          var(--color2) 270deg,
+          var(--color2) 315deg,
+          var(--color3) 315deg
+        )
+      ;
+    }
+
+    &__sunsets {
+      background-size: calc(var(--unit) * 8) calc(var(--unit) * 6);
+      background-image:
+        radial-gradient(
+          circle at bottom center,
+          var(--color3) calc(var(--unit) * 4),
+          var(--color2) calc(var(--unit) * 4)
+        ),
+        linear-gradient(
+          0deg,
+          var(--color2) 0%,
+          var(--color2) 5%,
+          var(--color1) 5%,
+          var(--color1) 10%,
+          var(--color2) 10%,
+          var(--color2) 15%,
+          var(--color1) 15%,
+          var(--color1) 20%,
+          var(--color2) 20%,
+          var(--color2) 25%,
+          var(--color1) 25%,
+          var(--color1) 30%,
+          var(--color2) 30%,
+          var(--color2) 35%,
+          var(--color1) 35%,
+          var(--color1) 40%,
+          var(--color2) 40%,
+          var(--color2) 45%,
+          var(--color1) 45%,
+          var(--color1) 50%,
+          var(--color2) 50%,
+          var(--color2) 55%,
+          var(--color1) 55%,
+          var(--color1) 60%,
+          var(--color2) 60%,
+          var(--color2) 65%,
+          var(--color1) 65%,
+          var(--color1) 70%,
+          var(--color2) 70%,
+          var(--color2) 75%,
+          var(--color1) 75%,
+          var(--color1) 80%,
+          var(--color2) 80%,
+          var(--color2) 85%,
+          var(--color1) 85%,
+          var(--color1) 90%,
+          var(--color2) 90%,
+          var(--color2) 95%,
+          var(--color1) 95%,
+          var(--color1) 100%
+        )
+      ;
+    }
+
+    &__combs {
+      background-size: calc(var(--unit) * 8) calc(var(--unit) * 8);
+      background-image:
+        radial-gradient(
+          circle at center center,
+          var(--color3) calc(var(--unit) * 4),
+          var(--color1) calc(var(--unit) * 4)
+        ),
+        linear-gradient(
+          0deg,
+          var(--color2) 0%,
+          var(--color2) 5%,
+          var(--color3) 5%,
+          var(--color3) 10%,
+          var(--color2) 10%,
+          var(--color2) 15%,
+          var(--color3) 15%,
+          var(--color3) 20%,
+          var(--color2) 20%,
+          var(--color2) 25%,
+          var(--color3) 25%,
+          var(--color3) 30%,
+          var(--color2) 30%,
+          var(--color2) 35%,
+          var(--color3) 35%,
+          var(--color3) 40%,
+          var(--color2) 40%,
+          var(--color2) 45%,
+          var(--color3) 45%,
+          var(--color3) 50%,
+          var(--color2) 50%,
+          var(--color2) 55%,
+          var(--color3) 55%,
+          var(--color3) 60%,
+          var(--color2) 60%,
+          var(--color2) 65%,
+          var(--color3) 65%,
+          var(--color3) 70%,
+          var(--color2) 70%,
+          var(--color2) 75%,
+          var(--color3) 75%,
+          var(--color3) 80%,
+          var(--color2) 80%,
+          var(--color2) 85%,
+          var(--color3) 85%,
+          var(--color3) 90%,
+          var(--color2) 90%,
+          var(--color2) 95%,
+          var(--color3) 95%,
+          var(--color3) 100%
+        ),
+        linear-gradient(
+          90deg,
+          var(--color2) 50%,
+          var(--color3) 50%
+        )
+      ;
+    }
+
+    &__patchwork {
+      background-size: calc(var(--unit) * 10) calc(var(--unit) * 10);
+      background-image:
+        conic-gradient(
+          var(--color3) 90deg,
+          var(--color1) 90deg,
+          var(--color1) 180deg,
+          var(--color2) 180deg,
+          var(--color2) 270deg,
+          var(--color1) 270deg,
+          var(--color1) 300deg
+        ),
+        repeating-linear-gradient(
+          45deg,
+          var(--color2) 0%,
+          var(--color2) 2%,
+          var(--color3) 2%,
+          var(--color3) 4%
+        )
+      ;
+    }
+
+    &__scratches {
+      background-size: calc(var(--unit) * 10) calc(var(--unit) * 10);
+      background-image:
+        linear-gradient(
+          90deg,
+          var(--color2) 0%,
+          var(--color2) 5%,
+          var(--color3) 5%,
+          var(--color3) 10%,
+          var(--color2) 10%,
+          var(--color2) 15%,
+          var(--color3) 15%,
+          var(--color3) 20%,
+          var(--color2) 20%,
+          var(--color2) 25%,
+          var(--color3) 25%,
+          var(--color3) 30%,
+          var(--color2) 30%,
+          var(--color2) 35%,
+          var(--color3) 35%,
+          var(--color3) 40%,
+          var(--color2) 40%,
+          var(--color2) 45%,
+          var(--color3) 45%,
+          var(--color3) 50%,
+          var(--color2) 50%,
+          var(--color2) 55%,
+          var(--color3) 55%,
+          var(--color3) 60%,
+          var(--color2) 60%,
+          var(--color2) 65%,
+          var(--color3) 65%,
+          var(--color3) 70%,
+          var(--color2) 70%,
+          var(--color2) 75%,
+          var(--color3) 75%,
+          var(--color3) 80%,
+          var(--color2) 80%,
+          var(--color2) 85%,
+          var(--color3) 85%,
+          var(--color3) 90%,
+          var(--color2) 90%,
+          var(--color2) 95%,
+          var(--color3) 95%,
+          var(--color3) 100%
+        ),
+        linear-gradient(
+          96.4deg,
+          var(--color2) 0%,
+          var(--color2) 5%,
+          var(--color3) 5%,
+          var(--color3) 10%,
+          var(--color2) 10%,
+          var(--color2) 15%,
+          var(--color3) 15%,
+          var(--color3) 20%,
+          var(--color2) 20%,
+          var(--color2) 25%,
+          var(--color3) 25%,
+          var(--color3) 30%,
+          var(--color2) 30%,
+          var(--color2) 35%,
+          var(--color3) 35%,
+          var(--color3) 40%,
+          var(--color2) 40%,
+          var(--color2) 45%,
+          var(--color3) 45%,
+          var(--color3) 50%,
+          var(--color2) 50%,
+          var(--color2) 55%,
+          var(--color3) 55%,
+          var(--color3) 60%,
+          var(--color2) 60%,
+          var(--color2) 65%,
+          var(--color3) 65%,
+          var(--color3) 70%,
+          var(--color2) 70%,
+          var(--color2) 75%,
+          var(--color3) 75%,
+          var(--color3) 80%,
+          var(--color2) 80%,
+          var(--color2) 85%,
+          var(--color3) 85%,
+          var(--color3) 90%,
+          var(--color2) 90%,
+          var(--color2) 95%,
+          var(--color3) 95%,
+          var(--color3) 100%
+        )        
+      ;
+    }
+
+    &__bookmarks {
+      background-size: calc(var(--unit) * 10) calc(var(--unit) * 10);
+      background-image:
+        linear-gradient(
+            -45deg,
+            var(--color2) 25%,
+            var(--color3) 25%,
+            var(--color3) 75%,
+            var(--color1) 75%
+        ),
+        linear-gradient(
+            45deg,
+            var(--color2) 25%,
+            var(--color3) 25%,
+            var(--color3) 75%,
+            var(--color2) 75%
+        ),
+        linear-gradient(
+            90deg,
+            var(--color1) 25%,
+            var(--color3) 25%,
+            var(--color3) 75%,
+            var(--color1) 75%
+        ),
+        linear-gradient(
+            var(--color1) 25%,
+            var(--color3) 25%,
+            var(--color3) 75%,
+            var(--color1) 75%
+        ),
+        conic-gradient(
+          var(--color2) 45deg,
+          var(--color3) 45deg,
+          var(--color3) 135deg,
+          var(--color2) 135deg,
+          var(--color2) 360deg
+        )
+      ;
+    }
+
+    &__lightning {
+      background-size: calc(var(--unit) * 9) calc(var(--unit) * 6);
+      background-image: 
+        repeating-linear-gradient(
+          45deg,
+          var(--color2) 0%,
+          var(--color2) 15%,
+          var(--color3) 15%,
+          var(--color3) 30%
+        )
+      ;
+    }
+
+    &__bowties {
+      background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+      background-image: 
+        repeating-linear-gradient(
+          45deg,
+          var(--color2) 0%,
+          var(--color2) 15%,
+          var(--color3) 15%,
+          var(--color3) 85%
+        )
+      ;
+    }
+
+    &__unstable {
+      background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+      background-image: 
+        linear-gradient(
+          180deg,
+          var(--color3) 48%,
+          var(--color2) 48%,
+          var(--color2) 50%,
+          var(--color3) 50%,
+          var(--color3) 98%,
+          var(--color2) 98%
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 3) calc(var(--unit) * 3),
+          var(--color2) 90deg,
+          var(--color3) 90deg,
+          var(--color3) 270deg,
+          var(--color1) 270deg
+        ),
+        linear-gradient(
+          90deg,
+          var(--color1) 25%,
+          var(--color2) 25%,
+          var(--color2) 75%,
+          var(--color1) 75%,
+          var(--color1) 100%
+        )
+      ;
+    }
+
+    &__slanted {
+      background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+      background-image:
+        conic-gradient(
+          from 0 at calc(var(--unit) * 3) 0,
+          var(--color3) 225deg,
+          var(--color2) 225deg,
+          var(--color2) 270deg,
+          var(--color3) 270deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 3) calc(var(--unit) * 6),
+          var(--color3) 45deg,
+          var(--color2) 45deg,
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 3) calc(var(--unit) * 3),
+          var(--color3) 45deg,
+          var(--color2) 45deg,
+          var(--color2) 90deg,
+          var(--color3) 90deg,
+          var(--color3) 225deg,
+          var(--color2) 225deg,
+          var(--color2) 270deg,
+          var(--color3) 270deg
+        )
+      ;
+    }
+
+    &__zipper {
+      background-size: calc(var(--unit) * 6) calc(var(--unit) * 2);
+      background-image: 
+        conic-gradient(
+          from 0 at calc(var(--unit) * 3) calc(var(--unit) * 1),
+          var(--color2) 90deg,
+          var(--color3) 90deg,
+          var(--color3) 270deg,
+          var(--color1) 270deg
+        ),
+        linear-gradient(
+          90deg,
+          var(--color1) 25%,
+          var(--color2) 25%,
+          var(--color2) 50%,
+          var(--color1) 50%,
+          var(--color1) 75%,
+          var(--color2) 75%,
+          var(--color2) 100%
+        )
+      ;
+    }
+
+    &__barbed-wire {
+      background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+      background-position: calc(var(--unit) * 2) 0;
+      background-image:
+        repeating-linear-gradient(
+          225deg,
+          var(--color3) 0px,
+          var(--color3) calc(var(--unit) * 1.5),
+          var(--color2) calc(var(--unit) * 1.5),
+          var(--color2) calc(var(--unit) * 2.8)
+        )        
+      ;
+    }
+
+    &__fibonacci {
+      background-image:
+        repeating-linear-gradient(
+          45deg,
+          var(--color2) calc(var(--unit) * 0.1),
+          var(--color1) calc(var(--unit) * 0.1),
+          var(--color1) calc(var(--unit) * 0.2),
+          var(--color2) calc(var(--unit) * 0.2),
+          var(--color2) calc(var(--unit) * 0.3),
+          var(--color1) calc(var(--unit) * 0.3),
+          var(--color1) calc(var(--unit) * 0.5),
+          var(--color2) calc(var(--unit) * 0.5),
+          var(--color2) calc(var(--unit) * 0.8),
+          var(--color1) calc(var(--unit) * 0.8),
+          var(--color1) calc(var(--unit) * 1.3),
+          var(--color2) calc(var(--unit) * 1.3),
+          var(--color2) calc(var(--unit) * 2.1),
+          var(--color1) calc(var(--unit) * 2.1),
+          var(--color1) calc(var(--unit) * 3.4),
+          var(--color2) calc(var(--unit) * 3.4),
+          var(--color2) calc(var(--unit) * 5.5),
+          var(--color1) calc(var(--unit) * 5.5),
+          var(--color1) calc(var(--unit) * 7.6),
+          var(--color2) calc(var(--unit) * 7.6),
+          var(--color2) calc(var(--unit) * 8.9),
+          var(--color1) calc(var(--unit) * 8.9),
+          var(--color1) calc(var(--unit) * 9.7),
+          var(--color2) calc(var(--unit) * 9.7),
+          var(--color2) calc(var(--unit) * 10.2),
+          var(--color1) calc(var(--unit) * 10.2),
+          var(--color1) calc(var(--unit) * 10.5),
+          var(--color2) calc(var(--unit) * 10.5),
+          var(--color2) calc(var(--unit) * 10.7),
+          var(--color1) calc(var(--unit) * 10.7),
+          var(--color1) calc(var(--unit) * 10.8),
+          var(--color2) calc(var(--unit) * 10.8)
+        )
+      ;
+    }
+
+    &__small-shadows {
+      background-size: calc(var(--unit) * 7) calc(var(--unit) * 7);
+      background-image:
+        radial-gradient(
+          circle at calc(var(--unit) * 1) calc(var(--unit) * 1),
+          var(--color1) calc(var(--unit) * 0.8),
+          var(--color3) calc(var(--unit) * 0.8)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 1) calc(var(--unit) * 1),
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 1.7) calc(var(--unit) * 1.7),
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+
+        radial-gradient(
+          circle at calc(var(--unit) * 4.5) calc(var(--unit) * 4.5),
+          var(--color1) calc(var(--unit) * 0.8),
+          var(--color3) calc(var(--unit) * 0.8)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 4.5) calc(var(--unit) * 4.5),
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 5.2) calc(var(--unit) * 5.2),
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        )
+      ;
+    }
+
+    &__mammatus {
+      background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+      background-position: calc(var(--unit) * 3) calc(var(--unit) * 3), 0 0, 0 0;
+      background-image:
+        radial-gradient(
+          circle at top center,
+          var(--color1) calc(var(--unit) * 3),
+          var(--color3) calc(var(--unit) * 3)
+        ),
+        radial-gradient(
+          circle at top center,
+          var(--color2) calc(var(--unit) * 3),
+          var(--color3) calc(var(--unit) * 3)
+        ),
+        linear-gradient(
+          var(--color1) calc(var(--unit) * 3),
+          var(--color2) calc(var(--unit) * 3)
+        )
+      ;
+    }
+
+    &__yin-yang {
+      background-size: calc(var(--unit) * 16) calc(var(--unit) * 16);
+      background-position: 0 0, 0 0, 0 0, 0 0, calc(var(--unit) * 3) 0, calc(var(--unit) * -7) calc(var(--unit) * -0.4), 0 0, 0 0, 0 0, 0 0, calc(var(--unit) * 11) calc(var(--unit) * 8), calc(var(--unit) * 1) calc(var(--unit) * 7.6);
+      background-image:
+        radial-gradient(
+          circle at calc(var(--unit) * 3) calc(var(--unit) * 1.5),
+          var(--color2) calc(var(--unit) * 0.6),
+          var(--color3) calc(var(--unit) * 0.6)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 3) calc(var(--unit) * 1.5),
+          var(--color1) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 3) calc(var(--unit) * 4.5),
+          var(--color1) calc(var(--unit) * 0.6),
+          var(--color3) calc(var(--unit) * 0.6)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 3) calc(var(--unit) * 4.5),
+          var(--color2) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at 0 calc(var(--unit) * 3),
+          var(--color1) calc(var(--unit) * 3),
+          var(--color3) calc(var(--unit) * 3)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 10) calc(var(--unit) * 3.4),
+          var(--color2) calc(var(--unit) * 3.4),
+          var(--color3) calc(var(--unit) * 3.4)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 11) calc(var(--unit) * 9.5),
+          var(--color1) calc(var(--unit) * 0.6),
+          var(--color3) calc(var(--unit) * 0.6)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 11) calc(var(--unit) * 9.5),
+          var(--color2) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 11) calc(var(--unit) * 12.5),
+          var(--color2) calc(var(--unit) * 0.6),
+          var(--color3) calc(var(--unit) * 0.6)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 11) calc(var(--unit) * 12.5),
+          var(--color1) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at 0 calc(var(--unit) * 3),
+          var(--color1) calc(var(--unit) * 3),
+          var(--color3) calc(var(--unit) * 3)
+        ),
+        radial-gradient(
+          circle at calc(var(--unit) * 10) calc(var(--unit) * 3.4),
+          var(--color2) calc(var(--unit) * 3.4),
+          var(--color3) calc(var(--unit) * 3.4)
+        )
+      ;      
+    }
+
+    &__another-brick {
+      background-size: calc(var(--unit) * 8) calc(var(--unit) * 8);
+      background-position: 0 0, calc(var(--unit) * -4) calc(var(--unit) * -0.4), 0 calc(var(--unit) * -0.4);
+      background-image:
+        conic-gradient(
+          from 0 at calc(var(--unit) * 0.4) calc(var(--unit) * 3.6),
+          var(--color2) 90deg,
+          var(--color3) 90deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 4) calc(var(--unit) * 4.4),
+          var(--color3) 90deg,
+          var(--color2) 90deg,
+          var(--color2) 180deg,
+          var(--color3) 180deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 4.4) calc(var(--unit) * 4.4),
+          var(--color3) 90deg,
+          var(--color2) 90deg,
+          var(--color2) 180deg,
+          var(--color3) 180deg
+        )
+      ;
+    }
+
+    &__lanterns {
+      background-size: calc(var(--unit) * 6) calc(var(--unit) * 6);
+      background-position: 0 0, 0 0, 0 0, 0 0, 0 0, calc(var(--unit) * 1.5) 0, calc(var(--unit) * -1.5) 0, calc(var(--unit) * 1.5) 0, calc(var(--unit) * -1.5) 0, calc(var(--unit) * 4.5) calc(var(--unit) * 4.5), calc(var(--unit) * -4.5) calc(var(--unit) * 4.5), calc(var(--unit) * 4.5) calc(var(--unit) * -4.5), calc(var(--unit) * -4.5) calc(var(--unit) * -4.5), calc(var(--unit) * -4.5) 0, calc(var(--unit) * 4.5) 0;
+      background-image: 
+        radial-gradient(
+          circle at center center,
+          var(--color2) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at top left,
+          var(--color1) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at top right,
+          var(--color1) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at bottom left,
+          var(--color1) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at bottom right,
+          var(--color1) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at top left,
+          var(--color2) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at top right,
+          var(--color2) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at bottom left,
+          var(--color2) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at bottom right,
+          var(--color2) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at top left,
+          var(--color2) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at top right,
+          var(--color2) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at bottom left,
+          var(--color2) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at bottom right,
+          var(--color2) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at right center,
+          var(--color1) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        radial-gradient(
+          circle at left center,
+          var(--color1) calc(var(--unit) * 1.5),
+          var(--color3) calc(var(--unit) * 1.5)
+        ),
+        linear-gradient(
+          90deg,
+          var(--color3) calc(var(--unit) * 1.5),
+          var(--color1) calc(var(--unit) * 1.5),
+          var(--color1) calc(var(--unit) * 4.5),
+          var(--color3) calc(var(--unit) * 4.5)
+        ),
+        linear-gradient(
+          var(--color3) calc(var(--unit) * 1.5),
+          var(--color2) calc(var(--unit) * 1.5),
+          var(--color2) calc(var(--unit) * 4.5),
+          var(--color3) calc(var(--unit) * 4.5)
+        )
+      ;
+    }
+
+    &__chocolate-rain {
+      background-size: calc(var(--unit) * 2.4) calc(var(--unit) * 3.2);
+      background-position: calc(var(--unit) * -2) calc(var(--unit) * -2), calc(var(--unit) * -0.8) calc(var(--unit) * -0.4), calc(var(--unit) * 0.2) calc(var(--unit) * 0.2), calc(var(--unit) * 0.2) calc(var(--unit) * 1.2), calc(var(--unit) * -1) calc(var(--unit) * 1.8), calc(var(--unit) * -1) calc(var(--unit) * -0.4);
+      background-image:
+        conic-gradient(
+          from 0 at calc(var(--unit) * 2) calc(var(--unit) * 2.2),
+          var(--color3) 90deg,
+          var(--color2) 90deg,
+          var(--color2) 180deg,
+          var(--color3) 180deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 2) calc(var(--unit) * 2.2),
+          var(--color3) 90deg,
+          var(--color2) 90deg,
+          var(--color2) 180deg,
+          var(--color3) 180deg
+        ),
+        radial-gradient(
+          circle at center center,
+          var(--color2) calc(var(--unit) * 0.2),
+          var(--color3) calc(var(--unit) * 0.2)
+        ),
+        radial-gradient(
+          circle at center center,
+          var(--color2) calc(var(--unit) * 0.2),
+          var(--color3) calc(var(--unit) * 0.2)
+        ),
+        radial-gradient(
+          circle at center center,
+          var(--color2) calc(var(--unit) * 0.2),
+          var(--color3) calc(var(--unit) * 0.2)
+        ),
+        radial-gradient(
+          circle at center center,
+          var(--color2) calc(var(--unit) * 0.2),
+          var(--color3) calc(var(--unit) * 0.2)
+        )
+      ;
+    }
+
+    &__puzzle {
+      background-size: calc(var(--unit) * 5) calc(var(--unit) * 5);
+      background-position: calc(var(--unit) * -1.6) calc(var(--unit) * -1.6), calc(var(--unit) * -0.4) calc(var(--unit) * -0.4);
+      background-image:
+        conic-gradient(
+          from 0 at calc(var(--unit) * 2) calc(var(--unit) * 2),
+          var(--color3) 90deg,
+          var(--color2) 90deg,
+          var(--color2) 180deg,
+          var(--color3) 180deg
+        ),
+        conic-gradient(
+          from 0 at calc(var(--unit) * 2) calc(var(--unit) * 2),
+          var(--color3) 90deg,
+          var(--color2) 90deg,
+          var(--color2) 180deg,
+          var(--color3) 180deg
+        )
+      ;
+    }
+
+    &__flower-power {
+      background-size: calc(var(--unit) * 7) calc(var(--unit) * 7);
+      background-position: calc(var(--unit) * -1.5) 0, 0 calc(var(--unit) * -1.5), calc(var(--unit) * 1.5) 0, 0 calc(var(--unit) * 1.5);
+      background-image:
+        radial-gradient(
+          circle at center center,
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        radial-gradient(
+          circle at center center,
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        radial-gradient(
+          circle at center center,
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        ),
+        radial-gradient(
+          circle at center center,
+          var(--color2) calc(var(--unit) * 1),
+          var(--color3) calc(var(--unit) * 1)
+        )
+      ;
+    }
+}
